@@ -1,0 +1,8 @@
+host bbpuzzle-build
+	HostName bbp-build-01.aws.ngmoco.com
+ 	User dev
+
+host bbpuzzle-macmini
+	HostName bbp-content.corp.ngmoco.com
+	User builder
+
