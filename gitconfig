@@ -35,6 +35,7 @@
     g = grep --break --heading
     po = pull origin
     fa = fetch --all
+    fap = fetch --all --prune
     l = log --color --graph --abbrev-commit --pretty=format:\"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset\"
     c = commit
     aa = add .
