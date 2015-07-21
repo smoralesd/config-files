@@ -10,6 +10,7 @@ ZSH_THEME="one-line"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias adbunity='adb logcat -s Unity ActivityManager PackageManager dalvikvm DEBUG'
 alias ls='ls -G'
 alias ll='ls -lah'
 
