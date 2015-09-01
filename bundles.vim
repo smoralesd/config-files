@@ -2,37 +2,65 @@
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" Plugin to install plugins
 Plugin 'gmarik/Vundle.vim'
+" asynchronous build and test dispatcher
 Plugin 'tpope/vim-dispatch'
+" universal set of defaults
 Plugin 'tpope/vim-sensible'
+" code-completion engine for Vim
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'nosami/Omnisharp'
+" syntastic checker's runner
 Plugin 'scrooloose/syntastic'
+" git commands for vim
 Plugin 'tpope/vim-fugitive'
+" server-client service for C# stuff
+Plugin 'nosami/Omnisharp'
+" file/folder look up
 Plugin 'kien/ctrlp.vim'
+" status/tabline for vim
 Plugin 'bling/vim-airline'
+" javascript editing support
 Plugin 'marijnh/tern_for_vim'
+" easy to use, file-type sensible comments
 Plugin 'tomtom/tcomment_vim'
+" solarized color theme for vim
 Plugin 'altercation/vim-colors-solarized'
-
+" Enhanced JavaScript Syntax for Vim
 Plugin 'jelera/vim-javascript-syntax'
-Plugin 'pangloss/vim-javascript'
+" A Vim plugin for visually displaying indent levels in code
 Plugin 'nathanaelkane/vim-indent-guides'
+" quoting/parenthesizing made simple
+Plugin 'tpope/vim-surround'
+" Vim plugin, provides insert mode auto-completion for quotes, parens, brackets
 Plugin 'Raimondi/delimitMate'
+" Vim Jade template engine syntax highlighting and indention
 Plugin 'digitaltoad/vim-jade'
+" A Vim plugin which shows a git diff in the gutter (sign column) and stages/reverts hunks.
 Plugin 'airblade/vim-gitgutter'
-
+" Seamless navigation between tmux panes and vim splits
 Plugin 'christoomey/vim-tmux-navigator'
+" Simple tmux statusline generator with support for powerline symbols and statusline / airline / lightline integration
 Plugin 'edkolev/tmuxline.vim'
+" Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box.
 Bundle 'klen/python-mode'
 
 call vundle#end()
 
-let g:syntastic_check_on_open=1
-let g:syntastic_always_populate_loc_list = 1
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
-let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_javascript_jshint_args = '--config /Users/smorales/.jshintrc'
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 2
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" let g:syntastic_javascript_checkers = ['jshint']
+" let g:syntastic_javascript_jshint_args = '--config /Users/smorales/.jshintrc'
+let jshint2_read = 0
+let jshint2_save = 0
+let jshint2_confirm = 0
 
 let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues']
 
