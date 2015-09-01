@@ -56,14 +56,8 @@ let g:syntastic_auto_loc_list = 2
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-" let g:syntastic_javascript_checkers = ['jshint']
-" let g:syntastic_javascript_jshint_args = '--config /Users/smorales/.jshintrc'
-let jshint2_read = 0
-let jshint2_save = 0
-let jshint2_confirm = 0
-
+let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues']
-
 let g:syntastic_python_checkers = ['python']
 
 " These are the tweaks I apply to YCM's config, you don't need them but they might help.
