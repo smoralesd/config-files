@@ -58,6 +58,7 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
 nnoremap <F5> :%s/\s\+$//ge <bar> :%s/^(\t\+)\s\+//ge <cr>
+nmap <F9> :set ignorecase! ignorecase?
 
 augroup mygroup
     autocmd!

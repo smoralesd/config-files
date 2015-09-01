@@ -18,6 +18,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'nosami/Omnisharp'
 " file/folder look up
 Plugin 'kien/ctrlp.vim'
+" CtrlP C matching extension
+Plugin 'JazzCore/ctrlp-cmatcher'
 " status/tabline for vim
 Plugin 'bling/vim-airline'
 " javascript editing support
@@ -72,10 +74,21 @@ let g:airline_solarized_bg='dark'
 let g:airline_theme='wombat'
 
 let g:ctrlp_max_files = 0
+let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+            \ --ignore .git
+            \ --ignore .svn
+            \ --ignore .hg
+            \ --ignore .DS_Store
+            \ --ignore "**/*.pyc"
+            \ --ignore "node_modules"
+            \ -g ""'
+
 let g:ctrlp_custom_ignore = {
   \ 'dir':	'\v[\/]\.(git|hg|svn)$',
   \ 'file': '\v\.(exe|so|dll)$',
   \ }
+
+let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
 
 " Omnisharp specific configs
 let g:OmniSharp_timeout = 5
