@@ -53,6 +53,9 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+""""""""""""""""""""""""""""""""""""
+" syntastic configs
+""""""""""""""""""""""""""""""""""""
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 2
 let g:syntastic_check_on_open = 1
@@ -62,23 +65,34 @@ let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues']
 let g:syntastic_python_checkers = ['python']
 
+""""""""""""""""""""""""""""""""""""
+" YouCompleteMe configs
+""""""""""""""""""""""""""""""""""""
 " These are the tweaks I apply to YCM's config, you don't need them but they might help.
 " YCM gives you popups and splits by default that some people might not
 " like, so these should tidy it up a bit for you.
 let g:ycm_add_preview_to_completeopt=0
 let g:ycm_confirm_extra_conf=0
 
+""""""""""""""""""""""""""""""""""""
+" Airline configs
+""""""""""""""""""""""""""""""""""""
 let &t_Co=16
 let g:solarized_termcolors=16
 let g:airline_solarized_bg='dark'
 let g:airline_theme='wombat'
 
+""""""""""""""""""""""""""""""""""""
+" ctrlP configs
+""""""""""""""""""""""""""""""""""""
 let g:ctrlp_max_files = 0
 let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
             \ --ignore .git
             \ --ignore .svn
             \ --ignore .hg
             \ --ignore .DS_Store
+            \ --ignore "*.meta"
+            \ --ignore "*.prefab"
             \ --ignore "**/*.pyc"
             \ --ignore "node_modules"
             \ -g ""'
@@ -90,9 +104,14 @@ let g:ctrlp_custom_ignore = {
 
 let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
 
+"""""""""""""""""""""""""""""""""""""
 " Omnisharp specific configs
+"""""""""""""""""""""""""""""""""""""
 let g:OmniSharp_timeout = 5
 
+"""""""""""""""""""""""""""""""""""""
+" tmuxline specific configs
+"""""""""""""""""""""""""""""""""""""
 let g:tmuxline_powerline_separators = 0
 let g:tmuxline_separators = {
     \ 'left' : '',
@@ -101,7 +120,9 @@ let g:tmuxline_separators = {
     \ 'right_alt' : '<',
     \ 'space' : ' '}
 
-" Config for klen/python-mode
+"""""""""""""""""""""""""""""""""""""
+" klen/python-mode specific configs
+"""""""""""""""""""""""""""""""""""""
 " disable rope autocompletion (let youcompleteme take care of that)
 let g:pymode_rope = 0
 

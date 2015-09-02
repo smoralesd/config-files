@@ -17,7 +17,15 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
+" enable line numbers
 set number
+" disable line wrapping
+set nowrap
+
+" set case sensitibility to search pattern
+set ignorecase
+set smartcase
+
 set nobackup
 set noswapfile
 set hidden
@@ -58,7 +66,7 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
 nnoremap <F5> :%s/\s\+$//ge <bar> :%s/^(\t\+)\s\+//ge <cr>
-nmap <F9> :set ignorecase! ignorecase?
+nmap <F9> :set ignorecase! ignorecase?<cr>
 
 augroup mygroup
     autocmd!
