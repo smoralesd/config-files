@@ -81,6 +81,7 @@ let &t_Co=16
 let g:solarized_termcolors=16
 let g:airline_solarized_bg='dark'
 let g:airline_theme='wombat'
+let g:airline_powerline_fonts = 1
 
 """"""""""""""""""""""""""""""""""""
 " ctrlP configs
