@@ -98,6 +98,8 @@ augroup mygroup
     autocmd FileType        javascript  nnoremap <buffer> <leader>dc :TernDoc<cr>
     autocmd FileType        javascript  nnoremap <buffer> <leader>r :TernRename<cr>
     autocmd FileType        javascript  nnoremap <buffer> <leader>f :Ggrep <cword><cr>
+    autocmd FileType        javascript  call JavaScriptFold()
+    autocmd FileType        javascript  exec "normal zR"
 
     autocmd FileType        python      set expandtab modeline nowrap
     autocmd FileType        python      nnoremap <buffer> <leader>d :YcmCompleter GoToDeclaration <cr>

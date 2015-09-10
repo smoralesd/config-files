@@ -30,6 +30,8 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'altercation/vim-colors-solarized'
 " Enhanced JavaScript Syntax for Vim
 Plugin 'jelera/vim-javascript-syntax'
+" Vastly improved Javascript indentation and syntax support in Vim
+Plugin 'pangloss/vim-javascript'
 " A Vim plugin for visually displaying indent levels in code
 Plugin 'nathanaelkane/vim-indent-guides'
 " quoting/parenthesizing made simple
