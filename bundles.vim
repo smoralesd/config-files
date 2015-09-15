@@ -32,6 +32,9 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'jelera/vim-javascript-syntax'
 " Vastly improved Javascript indentation and syntax support in Vim
 Plugin 'pangloss/vim-javascript'
+" vim plugin which formated javascript files by js-beautify
+Plugin 'maksimr/vim-jsbeautify'
+Plugin 'einars/js-beautify'
 " A Vim plugin for visually displaying indent levels in code
 Plugin 'nathanaelkane/vim-indent-guides'
 " quoting/parenthesizing made simple
