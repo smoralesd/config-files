@@ -67,6 +67,7 @@ nnoremap <c-l> <c-w>l
 
 nnoremap <F5> :%s/\s\+$//ge <bar> :%s/^(\t\+)\s\+//ge <cr>
 nmap <F9> :set ignorecase! ignorecase?<cr>
+noremap <F3> :Autoformat<cr>
 
 augroup mygroup
     autocmd!
