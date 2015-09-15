@@ -29,7 +29,11 @@ Plugin 'tomtom/tcomment_vim'
 " solarized color theme for vim
 Plugin 'altercation/vim-colors-solarized'
 " Enhanced JavaScript Syntax for Vim
-Plugin 'jelera/vim-javascript-syntax'
+" Plugin 'jelera/vim-javascript-syntax'
+" YAJS.vim: Yet Another JavaScript Syntax for Vim
+Plugin 'othree/yajs.vim'
+" Syntax for JavaScript libraries
+Plugin 'othree/javascript-libraries-syntax.vim'
 " Vastly improved Javascript indentation and syntax support in Vim
 Plugin 'pangloss/vim-javascript'
 " Provide easy code formatting in Vim by integrating existing code formatters.

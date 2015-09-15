@@ -16,6 +16,7 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+set cursorline
 
 " enable line numbers
 set number
@@ -25,6 +26,9 @@ set nowrap
 " set case sensitibility to search pattern
 set ignorecase
 set smartcase
+
+set incsearch
+set hlsearch
 
 set nobackup
 set noswapfile
@@ -99,16 +103,41 @@ augroup mygroup
     autocmd FileType        javascript  nnoremap <buffer> <leader>dc :TernDoc<cr>
     autocmd FileType        javascript  nnoremap <buffer> <leader>r :TernRename<cr>
     autocmd FileType        javascript  nnoremap <buffer> <leader>f :Ggrep <cword><cr>
-    autocmd FileType        javascript  call JavaScriptFold()
-    autocmd FileType        javascript  exec "normal zR"
+    autocmd FileType        javascript  call CustomJavascriptFold()
 
     autocmd FileType        python      set expandtab modeline nowrap
     autocmd FileType        python      nnoremap <buffer> <leader>d :YcmCompleter GoToDeclaration <cr>
-    " autocmd FileType        python      exec "normal zR"
 
     autocmd FileType        json        nnoremap <buffer> <leader>r :%!python -m json.tool <cr> :%s/\s\+$//ge <bar> :%s/^(\t\+)\s\+//ge <cr>
 augroup END
 
-"filetype plugin on
-"set runtimepath^=~/.vim/bundle/ctrlp.vim
+function! CustomJavascriptFold()
+    syntax region foldBraces start=/{/ end=/}/ transparent fold keepend extend
+    setlocal foldmethod=marker
+    setlocal foldmarker={,}
+    setlocal foldlevel=99
+    setlocal foldtext=CustomFoldText()
+endfunction
+
+function! CustomFoldText()
+    "get first non-blank line
+    let fs = v:foldstart
+    while getline(fs) =~ '^\s*$' | let fs = nextnonblank(fs + 1)
+    endwhile
+
+    if fs > v:foldend
+        let line = getline(v:foldstart)
+    else
+        let line = substitute(getline(fs), '\t', repeat(' ', &tabstop), 'g')
+    endif
+
+    let w = winwidth(0) - &foldcolumn - (&number ? 8 : 0)
+    let foldSize = 1 + v:foldend - v:foldstart
+    let foldSizeStr = " " . foldSize . " lines "
+    let foldLevelStr = repeat('+--', v:foldlevel)
+    let lineCount = line("$")
+    let foldPercentage = printf("[%.1f", (foldSize * 1.0) / lineCount * 100) . "%] "
+    let expansionString = repeat(".", w - strwidth(foldSizeStr . line . foldLevelStr . foldPercentage))
+    return line . expansionString . foldSizeStr . foldPercentage . foldLevelStr
+endfunction
 
