@@ -61,6 +61,11 @@ set wildignore+=Temp,Library
 " Remove 'Press Enter to continue' message when type information is longer than one line.
 set cmdheight=2
 
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
 nnoremap <leader>v :vsplit<cr>
 
 "Easier split navigation
