@@ -78,6 +78,9 @@ nnoremap <F5> :%s/\s\+$//ge <bar> :%s/^(\t\+)\s\+//ge <cr>
 nmap <F9> :set ignorecase! ignorecase?<cr>
 noremap <F3> :Autoformat<cr>
 
+nnoremap <leader>gb :Gblame<cr>
+nnoremap <leader>h :nohl<cr>
+
 augroup mygroup
     autocmd!
     autocmd QuickFixCmdPost *grep*      cwindow
