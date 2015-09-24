@@ -68,8 +68,10 @@ set statusline+=%*
 """"""""""""""""""""""""""""""""""""
 " ultisnips configs
 """"""""""""""""""""""""""""""""""""
+let g:UltiSnipsExpandTrigger="<c-d>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsJumpBackwardTrigger="<c-f>"
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "my_snippets"]
 
 """"""""""""""""""""""""""""""""""""
 " ag.vim configs
