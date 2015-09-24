@@ -54,12 +54,20 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'edkolev/tmuxline.vim'
 " Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box.
 Bundle 'klen/python-mode'
+" Vim plugin for the_silver_searcher, 'ag', a replacement for the Perl module / CLI script 'ack'
+Bundle 'rking/ag.vim'
+
 
 call vundle#end()
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
+""""""""""""""""""""""""""""""""""""
+" ag.vim configs
+""""""""""""""""""""""""""""""""""""
+let g:ag_working_path_mode="r"
 
 """"""""""""""""""""""""""""""""""""
 " syntastic configs

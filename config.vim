@@ -84,6 +84,9 @@ nnoremap <leader>h :nohl<cr>
 augroup mygroup
     autocmd!
     autocmd QuickFixCmdPost *grep*      cwindow
+    autocmd FileType        cs,javascript,python,c,cpp  nnoremap <buffer> <leader>af :Ag <cword><cr>
+    autocmd FileType        cs,javascript,python,c,cpp  nnoremap <buffer> <leader>f :Ggrep <cword><cr>
+
     autocmd FileType        cs          set expandtab smartindent smarttab
     autocmd Filetype        c,cpp,cs    nnoremap <buffer> <leader>d :YcmCompleter GoToDeclaration<cr>
     autocmd Filetype        c,cpp,cs    nnoremap <buffer> <leader>di :YcmCompleter GoToImplementationElseDeclaration<cr>
@@ -102,15 +105,12 @@ augroup mygroup
     autocmd FileType        cs          nnoremap <leader>th :OmniSharpHighlightTypes<cr>
     autocmd CursorHold      cs          call OmniSharp#TypeLookupWithoutDocumentation()
 
-    autocmd FileType        cs          nnoremap <buffer> <leader>f :Ggrep <cword><cr>
-
     autocmd FileType        javascript  set expandtab
     autocmd FileType        javascript  nnoremap <buffer> <leader>d :TernDef <cr>
     autocmd FileType        javascript  nnoremap <buffer> <leader>fu :TernRefs<cr>
     autocmd FileType        javascript  nnoremap <buffer> <leader>ft :TernType<cr>
     autocmd FileType        javascript  nnoremap <buffer> <leader>dc :TernDoc<cr>
     autocmd FileType        javascript  nnoremap <buffer> <leader>r :TernRename<cr>
-    autocmd FileType        javascript  nnoremap <buffer> <leader>f :Ggrep <cword><cr>
     autocmd FileType        javascript  call CustomJavascriptFold()
     autocmd FileType        javascript  setlocal omnifunc=tern#Complete
 
