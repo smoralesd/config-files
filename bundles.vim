@@ -56,13 +56,20 @@ Plugin 'edkolev/tmuxline.vim'
 Bundle 'klen/python-mode'
 " Vim plugin for the_silver_searcher, 'ag', a replacement for the Perl module / CLI script 'ack'
 Bundle 'rking/ag.vim'
-
+" UltiSnips - The ultimate snippet solution for Vim
+Plugin 'sirver/ultisnips'
 
 call vundle#end()
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
+""""""""""""""""""""""""""""""""""""
+" ultisnips configs
+""""""""""""""""""""""""""""""""""""
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 """"""""""""""""""""""""""""""""""""
 " ag.vim configs
