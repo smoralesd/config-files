@@ -39,6 +39,7 @@
     l = log --color --graph --abbrev-commit --pretty=format:\"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset\"
     c = commit
     aa = add .
+    cfd = clean -fd
 [core]
     editor = /usr/local/bin/vim
 	excludesfile = /Users/smorales/.gitignore_global
