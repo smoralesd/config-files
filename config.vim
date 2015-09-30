@@ -77,6 +77,7 @@ nnoremap <c-l> <c-w>l
 nnoremap <F5> :%s/\s\+$//ge <bar> :%s/^(\t\+)\s\+//ge <cr>
 nmap <F9> :set ignorecase! ignorecase?<cr>
 noremap <F3> :Autoformat<cr>
+noremap <F2>> :SyntasticCheck<cr>
 
 nnoremap <leader>gb :Gblame<cr>
 nnoremap <leader>h :nohl<cr>
@@ -119,6 +120,10 @@ augroup mygroup
 
     autocmd FileType        json        nnoremap <buffer> <leader>r :%!python -m json.tool <cr> :%s/\s\+$//ge <bar> :%s/^(\t\+)\s\+//ge <cr>
 augroup END
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" FUNCTIONS
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 function! CustomJavascriptFold()
     syntax region foldBraces start=/{/ end=/}/ transparent fold keepend extend

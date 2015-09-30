@@ -28,8 +28,6 @@ Plugin 'marijnh/tern_for_vim'
 Plugin 'tomtom/tcomment_vim'
 " solarized color theme for vim
 Plugin 'altercation/vim-colors-solarized'
-" Enhanced JavaScript Syntax for Vim
-" Plugin 'jelera/vim-javascript-syntax'
 " YAJS.vim: Yet Another JavaScript Syntax for Vim
 Plugin 'othree/yajs.vim'
 " Syntax for JavaScript libraries
@@ -85,9 +83,12 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 2
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_auto_jump = 0
 
-let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_javascript_checkers = ['jscs', 'jshint']
 let g:syntastic_javascript_jshint_args = '--config /Users/smorales/.jshintrc'
+let g:syntastic_javascript_jscs_args = '--max-errors -1'
+
 let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues']
 let g:syntastic_python_checkers = ['python']
 
