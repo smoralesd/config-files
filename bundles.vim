@@ -64,6 +64,11 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 """"""""""""""""""""""""""""""""""""
+" gitgutter configs
+""""""""""""""""""""""""""""""""""""
+let g:gitgutter_max_signs = 1000
+
+""""""""""""""""""""""""""""""""""""
 " ultisnips configs
 """"""""""""""""""""""""""""""""""""
 let g:UltiSnipsExpandTrigger="<c-d>"
