@@ -43,9 +43,13 @@ ${1:var }${2:function_name} = function $2(${3}) {
 endsnippet
 
 snippet li "Logger.info" b
-Logger.info(${1:"${2:value}"});
+Logger.info("$0");
 endsnippet
 
 snippet ld "console.debug" b
-Logger.debug(${1:"${2:value}"});
+Logger.debug("$0");
+endsnippet
+
+snippet te "throw new Error"
+throw new Error("${VISUAL}$0");
 endsnippet
