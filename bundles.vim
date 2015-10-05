@@ -56,6 +56,8 @@ Bundle 'klen/python-mode'
 Bundle 'rking/ag.vim'
 " UltiSnips - The ultimate snippet solution for Vim
 Plugin 'sirver/ultisnips'
+" A better JSON for Vim: distinct highlighting of keywords vs values, JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly.
+Plugin 'elzr/vim-json'
 
 call vundle#end()
 
