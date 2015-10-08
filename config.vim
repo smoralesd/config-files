@@ -77,11 +77,13 @@ nnoremap <c-l> <c-w>l
 nnoremap <F5> :%s/\s\+$//ge <bar> :%s/^(\t\+)\s\+//ge <cr>
 nmap <F9> :set ignorecase! ignorecase?<cr>
 noremap <F3> :Autoformat<cr>
-noremap <F2>> :SyntasticCheck<cr>
+noremap <F2> :SyntasticCheck<cr>
 
 noremap l1 :lfirst<cr>
 noremap [ :lprev<cr>
 noremap ] :lnext<cr>
+
+inoremap jk <ESC>
 
 nnoremap <leader>gb :Gblame<cr>
 nnoremap <leader>h :nohl<cr>
