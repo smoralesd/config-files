@@ -16,8 +16,9 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set cursorline
 
+" enable cursor line highlighting
+set cursorline
 " enable line numbers
 set number
 " disable line wrapping
@@ -30,12 +31,11 @@ set smartcase
 set incsearch
 set hlsearch
 
+syntax enable
 set nobackup
 set noswapfile
 set hidden
 set encoding=utf-8
-
-syntax enable
 
 set background=dark
 colorscheme solarized
@@ -87,6 +87,8 @@ inoremap jk <ESC>
 
 nnoremap <leader>gb :Gblame<cr>
 nnoremap <leader>h :nohl<cr>
+
+nnoremap <silent> <c-t> :CtrlPTag<cr>
 
 augroup mygroup
     autocmd!
