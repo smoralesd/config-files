@@ -58,12 +58,30 @@ Bundle 'rking/ag.vim'
 Plugin 'sirver/ultisnips'
 " A better JSON for Vim: distinct highlighting of keywords vs values, JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly.
 Plugin 'elzr/vim-json'
+" Ctags generator for Vim
+Plugin 'szw/vim-tags'
 
 call vundle#end()
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
+""""""""""""""""""""""""""""""""""""
+" tern configs
+""""""""""""""""""""""""""""""""""""
+let g:tern_request_timeout = 6
+let g:tern_show_argument_hints='on_hold'
+""""""""""""""""""""""""""""""""""""
+" szw vim-tags configs
+""""""""""""""""""""""""""""""""""""
+let g:vim_tags_auto_generate = 0
+" integration with vim dispatch to make asyncronous call to system commands
+let g:vim_tags_use_vim_dispatch = 1
+" integration with YouCompleteMe
+let g:vim_tags_use_language_field = 1
+" lets store the tags file in the .git directory
+let g:vim_tags_directories = ['.git']
 
 """"""""""""""""""""""""""""""""""""
 " gitgutter configs
