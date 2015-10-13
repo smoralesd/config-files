@@ -62,6 +62,8 @@ Plugin 'elzr/vim-json'
 Plugin 'szw/vim-tags'
 " Vim plugin that displays tags in a window, ordered by scope
 Plugin 'majutsushi/tagbar'
+" Graph your Vim undo tree in style
+Plugin 'sjl/gundo.vim'
 
 call vundle#end()
 
@@ -73,7 +75,7 @@ set statusline+=%*
 " tern configs
 """"""""""""""""""""""""""""""""""""
 let g:tern_request_timeout = 6
-let g:tern_show_argument_hints='on_hold'
+" let g:tern_show_argument_hints='on_hold'
 """"""""""""""""""""""""""""""""""""
 " szw vim-tags configs
 """"""""""""""""""""""""""""""""""""
