@@ -85,6 +85,7 @@ noremap ] :lnext<cr>
 
 inoremap jk <ESC>
 
+nmap <F8> :TagbarToggle<cr>
 nnoremap <leader>gb :Gblame<cr>
 nnoremap <leader>h :nohl<cr>
 

@@ -60,6 +60,8 @@ Plugin 'sirver/ultisnips'
 Plugin 'elzr/vim-json'
 " Ctags generator for Vim
 Plugin 'szw/vim-tags'
+" Vim plugin that displays tags in a window, ordered by scope
+Plugin 'majutsushi/tagbar'
 
 call vundle#end()
 
