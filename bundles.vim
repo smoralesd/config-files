@@ -74,7 +74,7 @@ set statusline+=%*
 """"""""""""""""""""""""""""""""""""
 " tern configs
 """"""""""""""""""""""""""""""""""""
-let g:tern_request_timeout = 6
+" let g:tern_request_timeout = 6
 " let g:tern_show_argument_hints='on_hold'
 """"""""""""""""""""""""""""""""""""
 " szw vim-tags configs

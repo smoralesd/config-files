@@ -10,7 +10,7 @@ source $HOME/.vim/bundles.vim
 
 filetype plugin indent on
 
-let mapleader="-"
+let mapleader="\<Space>"
 
 set expandtab
 set tabstop=4
@@ -78,17 +78,16 @@ noremap <F2> :SyntasticCheck<cr>
 noremap <F3> :Autoformat<cr>
 nnoremap <F4> :GundoToggle<cr>
 nnoremap <F5> :%s/\s\+$//ge <bar> :%s/^(\t\+)\s\+//ge <cr>
+nmap <F8> :TagbarToggle<cr>
 nmap <F9> :set ignorecase! ignorecase?<cr>
 
 noremap l1 :lfirst<cr>
 noremap [ :lprev<cr>
 noremap ] :lnext<cr>
 
-inoremap jk <ESC>
-
-nmap <F8> :TagbarToggle<cr>
 nnoremap <leader>gb :Gblame<cr>
 nnoremap <leader>h :nohl<cr>
+nnoremap <Leader>w :w<cr>
 
 nnoremap <silent> <c-t> :CtrlPTag<cr>
 
