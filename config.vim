@@ -81,13 +81,15 @@ nnoremap <F5> :%s/\s\+$//ge <bar> :%s/^(\t\+)\s\+//ge <cr>
 nmap <F8> :TagbarToggle<cr>
 nmap <F9> :set ignorecase! ignorecase?<cr>
 
-noremap l1 :lfirst<cr>
+noremap <leader>l1 :lfirst<cr>
 noremap [ :lprev<cr>
 noremap ] :lnext<cr>
 
 nnoremap <leader>gb :Gblame<cr>
 nnoremap <leader>h :nohl<cr>
-nnoremap <Leader>w :w<cr>
+nnoremap <leader>w :w<cr>
+
+nnoremap <leader>tt :TernType<cr>
 
 nnoremap <silent> <c-t> :CtrlPTag<cr>
 
