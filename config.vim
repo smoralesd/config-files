@@ -81,6 +81,10 @@ nnoremap <F5> :%s/\s\+$//ge <bar> :%s/^(\t\+)\s\+//ge <cr>
 nmap <F8> :TagbarToggle<cr>
 nmap <F9> :set ignorecase! ignorecase?<cr>
 
+" shortcut to rapidly toggle set list and see the invisible characters
+nmap <leader>l :set list!<cr>
+set listchars=tab:▸\ ,eol:¬
+
 noremap <leader>l1 :lfirst<cr>
 noremap [ :lprev<cr>
 noremap ] :lnext<cr>
