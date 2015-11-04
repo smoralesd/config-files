@@ -51,7 +51,7 @@ autoload -U compinit && compinit
 source $ZSH/oh-my-zsh.sh
 source ~/.nvm/nvm.sh
 source /Users/smorales/workspace/zsh-git-prompt/zshrc.sh
-nvm use 0.10.26
+nvm use 0.10.38
 # Customize to your needs...
 
 # RVM_HOME=$HOME/.rvm
