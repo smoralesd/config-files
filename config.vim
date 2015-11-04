@@ -12,7 +12,6 @@ filetype plugin indent on
 
 let mapleader="\<Space>"
 
-set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -103,7 +102,7 @@ augroup mygroup
     autocmd FileType        cs,javascript,python,c,cpp  nnoremap <buffer> <leader>af :Ag <cword><cr>
     autocmd FileType        cs,javascript,python,c,cpp  nnoremap <buffer> <leader>f :Ggrep <cword><cr>
 
-    autocmd FileType        cs          set expandtab smartindent smarttab
+    autocmd FileType        cs          setlocal noexpandtab
     autocmd Filetype        c,cpp,cs    nnoremap <buffer> <leader>d :YcmCompleter GoToDeclaration<cr>
     autocmd Filetype        c,cpp,cs    nnoremap <buffer> <leader>di :YcmCompleter GoToImplementationElseDeclaration<cr>
 
@@ -121,7 +120,7 @@ augroup mygroup
     autocmd FileType        cs          nnoremap <leader>th :OmniSharpHighlightTypes<cr>
     autocmd CursorHold      cs          call OmniSharp#TypeLookupWithoutDocumentation()
 
-    autocmd FileType        javascript  set expandtab
+    autocmd FileType        javascript  setlocal expandtab
     autocmd FileType        javascript  nnoremap <buffer> <leader>d :TernDef <cr>
     autocmd FileType        javascript  nnoremap <buffer> <leader>fu :TernRefs<cr>
     autocmd FileType        javascript  nnoremap <buffer> <leader>ft :TernType<cr>
@@ -130,7 +129,7 @@ augroup mygroup
     autocmd FileType        javascript  call CustomJavascriptFold()
     autocmd FileType        javascript  setlocal omnifunc=tern#Complete
 
-    autocmd FileType        python      set expandtab modeline nowrap
+    autocmd FileType        python      setlocal expandtab modeline nowrap
     autocmd FileType        python      nnoremap <buffer> <leader>d :YcmCompleter GoToDeclaration <cr>
 
     autocmd FileType        json        nnoremap <buffer> <leader>r :%!python -m json.tool <cr> :%s/\s\+$//ge <bar> :%s/^(\t\+)\s\+//ge <cr>
