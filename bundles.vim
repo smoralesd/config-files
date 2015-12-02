@@ -150,6 +150,9 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
             \ --ignore .svn
             \ --ignore .hg
             \ --ignore .DS_Store
+            \ --ignore .json
+            \ --ignore .jmx
+            \ --ignore .txt
             \ --ignore "*.png"
             \ --ignore "*.unity"
             \ --ignore "*.meta"

@@ -12,6 +12,7 @@ filetype plugin indent on
 
 let mapleader="\<Space>"
 
+set noexpandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -99,6 +100,7 @@ nnoremap <silent> <c-t> :CtrlPTag<cr>
 augroup mygroup
     autocmd!
     autocmd QuickFixCmdPost *grep*      cwindow
+
     autocmd FileType        cs,javascript,python,c,cpp  nnoremap <buffer> <leader>af :Ag <cword><cr>
     autocmd FileType        cs,javascript,python,c,cpp  nnoremap <buffer> <leader>f :Ggrep <cword><cr>
 
