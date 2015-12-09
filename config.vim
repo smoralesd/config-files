@@ -12,7 +12,7 @@ filetype plugin indent on
 
 let mapleader="\<Space>"
 
-set noexpandtab
+set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -104,6 +104,7 @@ augroup mygroup
     autocmd FileType        cs,javascript,python,c,cpp  nnoremap <buffer> <leader>af :Ag <cword><cr>
     autocmd FileType        cs,javascript,python,c,cpp  nnoremap <buffer> <leader>f :Ggrep <cword><cr>
 
+    autocmd FileType        html        setlocal expandtab
     autocmd FileType        cs          setlocal noexpandtab
     autocmd Filetype        c,cpp,cs    nnoremap <buffer> <leader>d :YcmCompleter GoToDeclaration<cr>
     autocmd Filetype        c,cpp,cs    nnoremap <buffer> <leader>di :YcmCompleter GoToImplementationElseDeclaration<cr>
