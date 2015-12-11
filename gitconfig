@@ -40,6 +40,7 @@
     c = commit
     aa = add .
     cfd = clean -fd
+    parents = "!f() { git log --pretty=%P -n 1 $1;}; f"
 [core]
     editor = /usr/local/bin/vim
 	excludesfile = /Users/smorales/.gitignore_global
