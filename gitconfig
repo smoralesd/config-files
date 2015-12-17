@@ -42,6 +42,7 @@
     cfd = clean -fd
     parents = "!f() { git log --pretty=%P -n 1 $1;}; f"
     diff-commit = "!f() { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative $1..$2; }; f"
+    contains = "!f() { git branch --contains $1; }; f"
 [core]
     editor = /usr/local/bin/vim
 	excludesfile = /Users/smorales/.gitignore_global
