@@ -6,3 +6,7 @@ host bbpuzzle-macmini
 	HostName bbp-content.corp.ngmoco.com
 	User builder
 
+host tfbt-dev-01
+    HostName tfb-dev-01.elasticbeanstalk.com
+    User ec2-user
+
