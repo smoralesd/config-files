@@ -31,7 +31,7 @@ Plugin 'altercation/vim-colors-solarized'
 " YAJS.vim: Yet Another JavaScript Syntax for Vim
 Plugin 'othree/yajs.vim'
 " Syntax for JavaScript libraries
-Plugin 'othree/javascript-libraries-syntax.vim'
+" Plugin 'othree/javascript-libraries-syntax.vim'
 " Vastly improved Javascript indentation and syntax support in Vim
 Plugin 'pangloss/vim-javascript'
 " Provide easy code formatting in Vim by integrating existing code formatters.
@@ -64,12 +64,27 @@ Plugin 'szw/vim-tags'
 Plugin 'majutsushi/tagbar'
 " Graph your Vim undo tree in style
 Plugin 'sjl/gundo.vim'
+" Tools related to the TypeScript language
+" Bundle 'icholy/typescript-tools'
+" Typescript syntax files for Vim
+" Plugin 'leafgarland/typescript-vim'
+" The most advanced TypeScript Syntax Highlighting
+Plugin 'HerringtonDarkholme/yats.vim'
+" Interactive command execution in Vim.
+Plugin 'Shougo/vimproc.vim'
+" A Vim plugin for TypeScript
+Plugin 'Quramy/tsuquyomi'
 
 call vundle#end()
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
+""""""""""""""""""""""""""""""""""""
+" tsuquyomi configs
+""""""""""""""""""""""""""""""""""""
+let g:tsuquyomi_disable_default_mappings = 1
 
 """"""""""""""""""""""""""""""""""""
 " tern configs

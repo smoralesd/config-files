@@ -109,6 +109,13 @@ augroup mygroup
     autocmd Filetype        c,cpp,cs    nnoremap <buffer> <leader>d :YcmCompleter GoToDeclaration<cr>
     autocmd Filetype        c,cpp,cs    nnoremap <buffer> <leader>di :YcmCompleter GoToImplementationElseDeclaration<cr>
 
+    autocmd FileType        typescript  nnoremap <buffer> <leader>d :TsuDefinition<cr>
+    autocmd FileType        typescript  nnoremap <buffer> <leader>fu :TsuReferences<cr>
+    autocmd FileType        typescript  nnoremap <buffer> <leader>r :TsuRenameSymbol<cr>
+    autocmd FileType        typescript  setlocal completeopt+=menu,preview
+    autocmd FileType        typescript  nmap <buffer> <leader>t : <C-u>echo tsuquyomi#hint()<cr>
+    autocmd FileType        typescript  setlocal omnifunc=tsuquyomi#complete
+
     autocmd Filetype        cs          nnoremap <buffer> <leader>fi :OmniSharpFindImplementations<cr>
     autocmd Filetype        cs          nnoremap <buffer> <leader>ft :OmniSharpFindType<cr>
     autocmd Filetype        cs          nnoremap <buffer> <leader>fs :OmniSharpFindSymbol<cr>
@@ -137,6 +144,11 @@ augroup mygroup
 
     autocmd FileType        json        nnoremap <buffer> <leader>r :%!python -m json.tool <cr> :%s/\s\+$//ge <bar> :%s/^(\t\+)\s\+//ge <cr>
 augroup END
+
+if !exists("g:ycm_semantic_triggers")
+    let g:ycm_semantic_triggers = {}
+endif
+let g:ycm_semantic_triggers['typescript'] = ['.']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " FUNCTIONS
