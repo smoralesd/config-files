@@ -106,10 +106,10 @@ augroup mygroup
 
     autocmd FileType        html        setlocal expandtab
     autocmd FileType        cs          setlocal noexpandtab
-    autocmd Filetype        c,cpp,cs    nnoremap <buffer> <leader>d :YcmCompleter GoToDeclaration<cr>
+    autocmd Filetype        c,cpp,cs    nnoremap <buffer> <leader>d :YcmCompleter GoToDeclaration<cr>z.
     autocmd Filetype        c,cpp,cs    nnoremap <buffer> <leader>di :YcmCompleter GoToImplementationElseDeclaration<cr>
 
-    autocmd FileType        typescript  nnoremap <buffer> <leader>d :TsuDefinition<cr>
+    autocmd FileType        typescript  nnoremap <buffer> <leader>d :TsuDefinition<cr>z.
     autocmd FileType        typescript  nnoremap <buffer> <leader>fu :TsuReferences<cr>
     autocmd FileType        typescript  nnoremap <buffer> <leader>r :TsuRenameSymbol<cr>
     autocmd FileType        typescript  setlocal completeopt+=menu,preview
@@ -131,7 +131,7 @@ augroup mygroup
     autocmd CursorHold      cs          call OmniSharp#TypeLookupWithoutDocumentation()
 
     autocmd FileType        javascript  setlocal expandtab
-    autocmd FileType        javascript  nnoremap <buffer> <leader>d :TernDef <cr>
+    autocmd FileType        javascript  nnoremap <buffer> <leader>d :TernDef<cr>z.
     autocmd FileType        javascript  nnoremap <buffer> <leader>fu :TernRefs<cr>
     autocmd FileType        javascript  nnoremap <buffer> <leader>ft :TernType<cr>
     autocmd FileType        javascript  nnoremap <buffer> <leader>dc :TernDoc<cr>
