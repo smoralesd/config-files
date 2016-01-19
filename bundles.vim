@@ -16,6 +16,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 " server-client service for C# stuff
 Plugin 'nosami/Omnisharp'
+" Enhancement's to Vim's C-Sharp Functionality
+Plugin 'OrangeT/vim-csharp'
 " file/folder look up
 Plugin 'kien/ctrlp.vim'
 " CtrlP C matching extension

@@ -105,9 +105,6 @@ augroup mygroup
     autocmd FileType        cs,javascript,python,c,cpp  nnoremap <buffer> <leader>f :Ggrep <cword><cr>
 
     autocmd FileType        html        setlocal expandtab
-    autocmd FileType        cs          setlocal noexpandtab
-    autocmd Filetype        c,cpp,cs    nnoremap <buffer> <leader>d :YcmCompleter GoToDeclaration<cr>z.
-    autocmd Filetype        c,cpp,cs    nnoremap <buffer> <leader>di :YcmCompleter GoToImplementationElseDeclaration<cr>
 
     autocmd FileType        typescript  nnoremap <buffer> <leader>d :TsuDefinition<cr>z.
     autocmd FileType        typescript  nnoremap <buffer> <leader>fu :TsuReferences<cr>
@@ -116,6 +113,9 @@ augroup mygroup
     autocmd FileType        typescript  nmap <buffer> <leader>t : <C-u>echo tsuquyomi#hint()<cr>
     autocmd FileType        typescript  setlocal omnifunc=tsuquyomi#complete
 
+    autocmd Filetype        c,cpp,cs    nnoremap <buffer> <leader>d :YcmCompleter GoToDeclaration<cr>z.
+    autocmd Filetype        c,cpp,cs    nnoremap <buffer> <leader>di :YcmCompleter GoToImplementationElseDeclaration<cr>
+    autocmd FileType        cs          setlocal expandtab
     autocmd Filetype        cs          nnoremap <buffer> <leader>fi :OmniSharpFindImplementations<cr>
     autocmd Filetype        cs          nnoremap <buffer> <leader>ft :OmniSharpFindType<cr>
     autocmd Filetype        cs          nnoremap <buffer> <leader>fs :OmniSharpFindSymbol<cr>
@@ -128,7 +128,7 @@ augroup mygroup
     autocmd FileType        cs          nnoremap <buffer> <leader>b :OmniSharpBuildAsync<cr>
     autocmd FileType        cs          nnoremap <leader>rl :OmniSharpReloadSolution<cr>
     autocmd FileType        cs          nnoremap <leader>th :OmniSharpHighlightTypes<cr>
-    autocmd CursorHold      cs          call OmniSharp#TypeLookupWithoutDocumentation()
+    autocmd CursorHold      *.cs        call OmniSharp#TypeLookupWithoutDocumentation()
 
     autocmd FileType        javascript  setlocal expandtab
     autocmd FileType        javascript  nnoremap <buffer> <leader>d :TernDef<cr>z.
