@@ -11,9 +11,9 @@ ZSH_THEME="one-line"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias adbunity='adb logcat -s Unity ActivityManager PackageManager dalvikvm DEBUG'
-alias ls='ls -G'
-alias ll='ls -lah'
+# alias adbunity='adb logcat -s Unity ActivityManager PackageManager dalvikvm DEBUG'
+# alias ls='ls -G'
+# alias ll='ls -lah'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -44,14 +44,14 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git gitfast zsh-completions colored-man-pages colorize zsh-syntax-highlighting adb node npm brew history history-substring-search chucknorris redis-cli battery)
+plugins=(git gitfast zsh-completions colored-man-pages colorize zsh-syntax-highlighting history history-substring-search)
 
 autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
-source ~/.nvm/nvm.sh
-source /Users/smorales/workspace/zsh-git-prompt/zshrc.sh
-nvm use 0.10.38
+# source ~/.nvm/nvm.sh
+source /home/smorales/mine/zsh-git-prompt/zshrc.sh
+# nvm use 0.10.38
 # Customize to your needs...
 
 # RVM_HOME=$HOME/.rvm
@@ -59,7 +59,7 @@ nvm use 0.10.38
 
 # export PATH=$RVM_HOME/bin:$ADB_HOME:$PATH
 
-export HOMEBREW_GITHUB_API_TOKEN=18b08f4c22a2e99122dbb290c064b5fa6ec4ea66
-export PATH="/Users/smorales/workspace/android-sdk-macosx/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/smorales/workspace/mongodb/bin:/Users/smorales/workspace/coloredlogcat:$PATH"
+# export HOMEBREW_GITHUB_API_TOKEN=18b08f4c22a2e99122dbb290c064b5fa6ec4ea66
+# export PATH="/Users/smorales/workspace/android-sdk-macosx/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/smorales/workspace/mongodb/bin:/Users/smorales/workspace/coloredlogcat:$PATH"
 export EDITOR='vim'
 #PATH=/usr/local/bin:$PATH:$HOME/.rvm/bin:$HOME/workspace/adt-bundle-mac-x86_64-20131030/sdk/platform-tools;  # Add RVM to PATH for scripting
