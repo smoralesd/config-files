@@ -5,7 +5,17 @@
 " This allows vim to do a lot more and stray from it's roots.
 set nocompatible
 
+filetype off
+
+source $HOME/.vim/bundles.vim
+
 filetype plugin indent on
+
+" default behaviour for tab and indentation stuff
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 
 let mapleader="\<Space>"
 
