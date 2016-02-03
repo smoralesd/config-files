@@ -43,7 +43,8 @@ set hidden
 set encoding=utf-8
 
 set laststatus=2
-" make the default split to be below set splitbelow
+" make the default split to be below
+set splitbelow
 
 set cmdheight=2
 
