@@ -50,7 +50,7 @@ autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
 # source ~/.nvm/nvm.sh
-source /home/smorales/mine/zsh-git-prompt/zshrc.sh
+source /home/smorales/mine/zsh-vcs-prompt/zshrc.sh
 # nvm use 0.10.38
 # Customize to your needs...
 
