@@ -63,3 +63,11 @@ source /home/smorales/mine/zsh-vcs-prompt/zshrc.sh
 # export PATH="/Users/smorales/workspace/android-sdk-macosx/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/smorales/workspace/mongodb/bin:/Users/smorales/workspace/coloredlogcat:$PATH"
 export EDITOR='vim'
 #PATH=/usr/local/bin:$PATH:$HOME/.rvm/bin:$HOME/workspace/adt-bundle-mac-x86_64-20131030/sdk/platform-tools;  # Add RVM to PATH for scripting
+
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+fi
+
+export TERM=xterm-256color
+[ -n "$TMUX" ] && export TERM=screen-256color
+
