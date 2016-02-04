@@ -20,6 +20,10 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomtom/tcomment_vim'
 " provides insert mode auto-completion for quotes, parenthesis, brackets...
 Plugin 'Raimondi/delimitMate'
+" git commands for vim
+Plugin 'tpope/vim-fugitive'
+" A Vim plugin which shows a git diff in the gutter (sign column) and stages/reverts hunks.
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()
 
@@ -57,10 +61,10 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
             \ --ignore "node_modules"
             \ -g ""'
 
- let g:ctrlp_custom_ignore = {
-            \ 'dir':	'\v[\/]\.(git|hg|svn)$',
-            \ 'file': '\v\.(exe|so|dll)$',
+let g:ctrlp_custom_ignore = {
+            \ 'dir':    '\v[\/]\.(git|hg|svn)$',
+            \ 'file':   '\v\.(exe|so|dll)$',
             \ }
 
- let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
+let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
 
