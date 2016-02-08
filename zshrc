@@ -14,6 +14,7 @@ ZSH_THEME="one-line"
 # alias adbunity='adb logcat -s Unity ActivityManager PackageManager dalvikvm DEBUG'
 # alias ls='ls -G'
 # alias ll='ls -lah'
+alias tmux='tmux -2'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
