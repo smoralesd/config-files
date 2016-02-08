@@ -24,6 +24,8 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-fugitive'
 " A Vim plugin which shows a git diff in the gutter (sign column) and stages/reverts hunks.
 Plugin 'airblade/vim-gitgutter'
+" code-completion engine for Vim
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
