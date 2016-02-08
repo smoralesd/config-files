@@ -64,6 +64,10 @@ source /home/smorales/mine/zsh-vcs-prompt/zshrc.sh
 export EDITOR='vim'
 #PATH=/usr/local/bin:$PATH:$HOME/.rvm/bin:$HOME/workspace/adt-bundle-mac-x86_64-20131030/sdk/platform-tools;  # Add RVM to PATH for scripting
 
+if [ -d "$HOME/.local/bin" ]; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
