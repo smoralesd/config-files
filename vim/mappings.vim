@@ -1,20 +1,28 @@
-" disable arrow keys on normal mode
+" Disable arrow keys on normal mode
 nnoremap <Up> <NOP>
 nnoremap <Down> <NOP>
 nnoremap <Left> <NOP>
 nnoremap <Right> <NOP>
 
-" vertical split
+" Vertical split
 noremap <leader>v :vsplit<cr>
 
-" easier windows navigation (when you split your workspace)
+" Easier windows navigation (when you split your workspace)
 nnoremap <c-h> <c-w>h
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 
+" Show whitespaces as characters. Useful to check mixed indentS
 nnoremap <leader>l :set list!<cr>
 set listchars=tab:▸\ ,eol:¬
 
+" Disable word highlighting (specially after a search)
 nnoremap <leader>h :nohl<cr>
+
+" fast write to buffer
 nnoremap <leader>w :w<cr>
+
+" Remove trailing whitespaces
+nnoremap <F5> :%s/\s\+$//ge <bar> :%s/^(\t\+)\s\+//ge <cr>
+
