@@ -73,5 +73,5 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 export TERM=xterm-256color
-[ -n "$TMUX" ] && export TERM=screen-256color
+[ -n "$TMUX" ] && export TERM=term-256color
 
