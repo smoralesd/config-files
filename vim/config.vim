@@ -48,7 +48,9 @@ set splitbelow
 
 set cmdheight=2
 
-" source the mappings files
+" use system clipboard
+set clipboard=unnamedplus
 
+" source the mappings files
 source $HOME/.vim/mappings.vim
 
