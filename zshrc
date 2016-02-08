@@ -50,20 +50,9 @@ plugins=(git gitfast zsh-completions colored-man-pages colorize zsh-syntax-highl
 autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
-# source ~/.nvm/nvm.sh
 source /home/smorales/mine/zsh-vcs-prompt/zshrc.sh
-# nvm use 0.10.38
-# Customize to your needs...
 
-# RVM_HOME=$HOME/.rvm
-# ADB_HOME=$HOME/workspace/adt-bundle-mac-x86_64-20131030/sdk/platform-tools
-
-# export PATH=$RVM_HOME/bin:$ADB_HOME:$PATH
-
-# export HOMEBREW_GITHUB_API_TOKEN=18b08f4c22a2e99122dbb290c064b5fa6ec4ea66
-# export PATH="/Users/smorales/workspace/android-sdk-macosx/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/smorales/workspace/mongodb/bin:/Users/smorales/workspace/coloredlogcat:$PATH"
 export EDITOR='vim'
-#PATH=/usr/local/bin:$PATH:$HOME/.rvm/bin:$HOME/workspace/adt-bundle-mac-x86_64-20131030/sdk/platform-tools;  # Add RVM to PATH for scripting
 
 if [ -d "$HOME/.local/bin" ]; then
     PATH="$HOME/.local/bin:$PATH"
@@ -74,5 +63,4 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 export TERM=xterm-256color
-[ -n "$TMUX" ] && export TERM=term-256color
 
