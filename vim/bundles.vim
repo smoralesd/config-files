@@ -36,6 +36,14 @@ set background=dark
 colorscheme solarized
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" YouCompleteMe config
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ycm_min_num_of_chars_for_completion = 1
+let g:ycm_add_preview_to_completeopt = 1
+let g:ycm_key_invoke_completion = '<C-Space>'
+let g:EclimCompletionMethod = 'omnifunc'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " airline config
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline_solarized_bg='dark'

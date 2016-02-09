@@ -51,6 +51,9 @@ set cmdheight=2
 " use system clipboard
 set clipboard=unnamedplus
 
+" enable omnifunction for auto completion
+set omnifunc=syntaxcomplete#Complete
+
 " source the mappings files
 source $HOME/.vim/mappings.vim
 
