@@ -11,49 +11,9 @@ source $HOME/.vim/bundles.vim
 
 filetype plugin indent on
 
-" default behaviour for tab and indentation stuff
-set expandtab
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+source $HOME/.vim/settings.vim
 
-let mapleader="\<Space>"
+source $HOME/.vim/autocommands.vim
 
-" enable cursor line highlighting
-set cursorline
-" enable line numbers
-set number
-" disable line wrapping
-set nowrap
-
-" set case sensitibity for search pattern
-set ignorecase
-set smartcase
-
-" enable incremental search
-set incsearch
-" enable highlighting for search term
-set hlsearch
-
-syntax enable
-
-set nobackup
-set noswapfile
-set hidden
-set encoding=utf-8
-
-set laststatus=2
-" make the default split to be below
-set splitbelow
-
-set cmdheight=2
-
-" use system clipboard
-set clipboard=unnamedplus
-
-" enable omnifunction for auto completion
-set omnifunc=syntaxcomplete#Complete
-
-" source the mappings files
 source $HOME/.vim/mappings.vim
 
