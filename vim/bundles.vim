@@ -28,6 +28,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'Valloric/YouCompleteMe'
 " rainbow parentheses
 Plugin 'kien/rainbow_parentheses.vim'
+" show vertical lines for each indent level (on space indented files)
+Plugin 'Yggdroot/indentLine'
 
 call vundle#end()
 
