@@ -46,3 +46,6 @@ set autoread
 
 " Always show current position
 set ruler
+
+" do not show mode (vim-airline is showing the mode)
+set noshowmode
