@@ -30,11 +30,19 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'kien/rainbow_parentheses.vim'
 " show vertical lines for each indent level (on space indented files)
 Plugin 'Yggdroot/indentLine'
+" A better JSON for Vim: distinct highlighting of keywords vs values,
+" JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly.
+Plugin 'elzr/vim-json'
 
 call vundle#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" rainbow parenthesesconfig
+" vim-json config
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:vim_json_syntax_conceal = 0
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" rainbow parentheses config
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:rbpt_colorpairs = [
     \ ['brown',       'RoyalBlue3'],
