@@ -58,6 +58,9 @@ if [ -d "$HOME/.local/bin" ]; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# see https://powerline.readthedocs.org/ for install instructions
+source ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
