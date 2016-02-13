@@ -1,6 +1,6 @@
 [user]
     name = Sebastian Morales
-    email = smorales@dena.jp
+    email = sebastian.moralesd@gmail.com
 [color]
     ui = true
     interactive = auto
@@ -46,9 +46,3 @@
 [core]
     editor = /usr/local/bin/vim
 	excludesfile = /Users/smorales/.gitignore_global
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
