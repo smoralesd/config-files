@@ -14,7 +14,6 @@ ZSH_THEME="one-line"
 # alias adbunity='adb logcat -s Unity ActivityManager PackageManager dalvikvm DEBUG'
 # alias ls='ls -G'
 # alias ll='ls -lah'
-alias tmux='tmux -2'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -53,17 +52,4 @@ source $ZSH/oh-my-zsh.sh
 source /home/smorales/mine/zsh-vcs-prompt/zshrc.sh
 
 export EDITOR='vim'
-
-if [ -d "$HOME/.local/bin" ]; then
-    PATH="$HOME/.local/bin:$PATH"
-fi
-
-# see https://powerline.readthedocs.org/ for install instructions
-# source ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
-
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-fi
-
-export TERM=xterm-256color
 
