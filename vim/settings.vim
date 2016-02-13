@@ -50,25 +50,12 @@ set ruler
 " do not show mode (vim-airline is showing the mode)
 set noshowmode
 
-" set different cursor color for different modes (insert vs normal/visual)
-if &term =~ "xterm\\|rxvt"
-    " use an orange cursor in insert mode
-    let &t_SI = "\<Esc>]12;orange\x7"
-    " use a red cursor otherwise
-    let &t_EI = "\<Esc>]12;red\x7"
-    silent !echo -ne "\033]12;red\007"
-
-    " use this values for cursor type
-    " 1 or 0 -> blinking block
-    " 3 -> blinking underscore
-    " 4 -> solid underscore
-    " Recent versions of xterm (282 or above) also support
-    " 5 -> blinking vertical bar
-    " 6 -> solid vertical bar
-    let &t_SI .= "\<Esc>[3 q"
-    let &t_EI .= "\<Esc>[2 q"
-
-    " reset cursor when vim exits
-    autocmd VimLeave * silent !echo -ne "\033]112\007"
-endif
+" orange in insert mode, red in command mode
+" if you want to use rgb color formatting:
+" konsoleprofile CustomCursorColor=#255255255
+autocmd VimEnter * silent !konsoleprofile UseCustomCursorColor=1
+let &t_SI = "\<Esc>]50;CustomCursorColor=orange;BlinkingCursorEnabled=1\x7"
+let &t_EI = "\<Esc>]50;CustomCursorColor=red;BlinkingCursorEnabled=0\x7"
+silent !konsoleprofile CustomCursorColor=red
+autocmd VimLeave * silent !konsoleprofile CustomCursorColor=gray;BlinkingCursorEnabled=0
 
