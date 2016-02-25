@@ -65,3 +65,9 @@ source /home/smorales/mine/zsh-vcs-prompt/zshrc.sh
 
 export EDITOR='vim'
 
+
+export NVM_DIR="/home/smorales/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+nvm use v0.12.10
+
