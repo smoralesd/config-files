@@ -64,9 +64,10 @@ source $ZSH/oh-my-zsh.sh
 source /home/smorales/mine/zsh-vcs-prompt/zshrc.sh
 
 export EDITOR='vim'
-
+export JAVA_HOME='/etc/alternatives/java_sdk_1.7.0_openjdk'
 
 export NVM_DIR="/home/smorales/.nvm"
+
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 nvm use v0.12.10
