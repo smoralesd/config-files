@@ -27,7 +27,7 @@ nnoremap <leader>w :w<cr>
 nnoremap <F5> :%s/\s\+$//ge <bar> :%s/^(\t\+)\s\+//ge <cr>
 
 " copy visual selection to x11 clipboard (needs xclip to be installed)
-vnoremap <silent> <C-v> :%w !xclip -i -sel c<cr><cr>
+vnoremap <silent> <C-c> :%w !xclip -i -sel c<cr><cr>
 
 " paste from x11 clipboard (needs xclip to be installed)
 nnoremap <silent> <C-v> :r !xclip -o -sel -c<cr>
