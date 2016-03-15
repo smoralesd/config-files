@@ -1,9 +1,9 @@
 #/usr/bin/env bash
 
-COMMAND = $1
+COMMAND=$1
 
 if [ -z $COMMAND ]; then
-    $COMMAND = "all"
+    COMMAND="all"
 fi
 
 # Install some pacakages we'll need to compile the driver below.
@@ -15,7 +15,7 @@ mkdir -p  hybrid_wl_f23
 # Change to working dir.
 cd hybrid_wl_f23
 
-if [ $COMMAND -eq "download" OR $COMMAND -eq "all"]; then
+if [ $COMMAND = "download" -o $COMMAND = "all" ]; then
 
     if [ `uname -m` == 'x86_64' ]; then
         # 64-bit driver files.
@@ -33,7 +33,7 @@ if [ $COMMAND -eq "download" OR $COMMAND -eq "all"]; then
 
 fi
 
-if [ $COMMAND -eq "install" OR $COMMAND -eq "all" ]; all
+if [ $COMMAND = "install" -o $COMMAND = "all" ]; then
     # Compile driver.
     make clean && make
 
