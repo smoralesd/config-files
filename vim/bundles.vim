@@ -30,9 +30,15 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'kien/rainbow_parentheses.vim'
 " show vertical lines for each indent level (on space indented files)
 Plugin 'Yggdroot/indentLine'
+
+"""""""""""""""""""""""""""""""""""""""""" JSON FILES 
 " A better JSON for Vim: distinct highlighting of keywords vs values,
 " JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly.
 Plugin 'elzr/vim-json'
+
+"""""""""""""""""""""""""""""""""""""""""" JAVASCRIPT FILES 
+" javascript editing support
+Plugin 'marijnh/tern_for_vim'
 
 call vundle#end()
 
