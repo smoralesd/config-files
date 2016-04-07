@@ -34,18 +34,23 @@ if [ $COMMAND = "download" -o $COMMAND = "all" ]; then
 fi
 
 if [ $COMMAND = "install" -o $COMMAND = "all" ]; then
+    echo "make clean && make"
     # Compile driver.
     make clean && make
 
+    echo "sudo make install"
     # Install driver.
     sudo make install
 
+    echo "sudo depmod -a"
     # Update available drivers.
     sudo depmod -a
 
+    echo "sudo rmmod b43 ssb bcma"
     # Unload conflicting drivers.
     sudo rmmod b43 ssb bcma
 
+    echo "sudo modprobe wl"
     # Load the driver.
     sudo modprobe wl
 
