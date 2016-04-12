@@ -25,8 +25,10 @@ nnoremap <leader>w :w<cr>
 
 " Toggle Raindow Parentheses
 nnoremap <F2> :RainbowParenthesesToggle<cr>
+" reformat code
+nnoremap <F3> :Autoformat<cr>
 " Remove trailing whitespaces
-nnoremap <F5> :%s/\s\+$//ge <bar> :%s/^(\t\+)\s\+//ge <cr>
+nnoremap <F5> :StripWhitespace<cr>
 
 " copy visual selection to x11 clipboard (needs xclip to be installed)
 vnoremap <silent> <C-c> :%w !xclip -i -sel c<cr><cr>

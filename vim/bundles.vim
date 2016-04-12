@@ -22,25 +22,43 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'Raimondi/delimitMate'
 " git commands for vim
 Plugin 'tpope/vim-fugitive'
-" A Vim plugin which shows a git diff in the gutter (sign column) and stages/reverts hunks.
-Plugin 'airblade/vim-gitgutter'
+" Show a diff via Vim sign column.
+Plugin 'mhinz/vim-signify'
 " code-completion engine for Vim
 Plugin 'Valloric/YouCompleteMe'
 " rainbow parentheses
 Plugin 'kien/rainbow_parentheses.vim'
 " show vertical lines for each indent level (on space indented files)
 Plugin 'Yggdroot/indentLine'
+" provide easy code formatting in Vim by integrating existing code formatters
+Plugin 'Chiel92/vim-autoformat'
+" quoting/parenthesizing made simple
+Plugin 'tpope/vim-surround'
+" Vim plugin for the_silver_searcher (ag)
+Plugin 'rking/ag.vim'
+" bronson/vim-trailing-whitespace
+Plugin 'ntpeters/vim-better-whitespace'
 
-"""""""""""""""""""""""""""""""""""""""""" JSON FILES 
+"""""""""""""""""""""""""""""""""""""""""" JSON FILES
 " A better JSON for Vim: distinct highlighting of keywords vs values,
 " JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly.
 Plugin 'elzr/vim-json'
 
-"""""""""""""""""""""""""""""""""""""""""" JAVASCRIPT FILES 
+"""""""""""""""""""""""""""""""""""""""""" JAVASCRIPT FILES
 " javascript editing support
 Plugin 'marijnh/tern_for_vim'
 
 call vundle#end()
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" signify config
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:signify_vcs_list = [ 'svn', 'git' ]
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ag.vim config
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ag_working_path_mode="r"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vim-json config
