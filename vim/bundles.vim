@@ -38,6 +38,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'rking/ag.vim'
 " bronson/vim-trailing-whitespace
 Plugin 'ntpeters/vim-better-whitespace'
+" The fancy start screen for Vim
+Plugin 'mhinz/vim-startify'
 
 """""""""""""""""""""""""""""""""""""""""" JSON FILES
 " A better JSON for Vim: distinct highlighting of keywords vs values,
