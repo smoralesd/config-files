@@ -20,5 +20,7 @@ augroup base_group
     au Syntax * RainbowParenthesesLoadSquare
     au Syntax * RainbowParenthesesLoadBraces
 
+    au FileType java setlocal omnifunc=javacomplete#Complete
+
 augroup END
 

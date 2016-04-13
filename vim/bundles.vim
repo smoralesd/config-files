@@ -50,6 +50,10 @@ Plugin 'elzr/vim-json'
 " javascript editing support
 Plugin 'marijnh/tern_for_vim'
 
+
+"""""""""""""""""""""""""""""""""""""""""" JAVA FILES
+Plugin 'artur-shaik/vim-javacomplete2'
+
 call vundle#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
