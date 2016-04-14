@@ -12,9 +12,6 @@ augroup base_group
     silent !konsoleprofile CustomCursorColor=red
     au VimLeave * silent !konsoleprofile CustomCursorColor=gray;BlinkingCursorEnabled=0
 
-    " highlight cword when cursor is moved (not mouse cursor, but actual text cursor)
-    au CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
-
     " load rainbow parentheses at vim start
     au Syntax * RainbowParenthesesLoadRound
     au Syntax * RainbowParenthesesLoadSquare

@@ -27,6 +27,8 @@ nnoremap <leader>w :w<cr>
 nnoremap <F2> :RainbowParenthesesToggle<cr>
 " reformat code
 nnoremap <F3> :Autoformat<cr>
+" highlight all words matched by cword
+nnoremap <F4> : exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))<cr>
 " Remove trailing whitespaces
 nnoremap <F5> :StripWhitespace<cr>
 

@@ -52,7 +52,12 @@ Plugin 'marijnh/tern_for_vim'
 
 
 """""""""""""""""""""""""""""""""""""""""" JAVA FILES
+"omni completion for java (maven support included)
 Plugin 'artur-shaik/vim-javacomplete2'
+
+"""""""""""""""""""""""""""""""""""""""""" PLANTUML FILES
+" vim syntax file for plant uml
+Plugin 'aklt/plantuml-syntax'
 
 call vundle#end()
 
