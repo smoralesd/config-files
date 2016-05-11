@@ -12,6 +12,8 @@ set cursorline
 set number
 " disable line wrapping
 set nowrap
+" show matching parenthesis
+set showmatch
 
 " set case sensitibity for search pattern
 set ignorecase
