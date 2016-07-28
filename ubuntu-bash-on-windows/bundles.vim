@@ -6,6 +6,10 @@ call vundle#begin()
 """""""""""""""""""""""""""""""""""""""""" UNIVERSAL PLUGINS FIRST
 " Plugin to install plugins
 Plugin 'gmarik/Vundle.vim'
+" dispatch.vim: asynchronous build and test dispatcher
+Plugin 'tpope/vim-dispatch'
+" Syntax checking hacks for vim
+Plugin 'scrooloose/syntastic'
 " file/folder look up
 Plugin 'ctrlpvim/ctrlp.vim'
 " CtrlP C matching extension - needs to compile component
