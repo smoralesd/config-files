@@ -5,6 +5,7 @@ set rtp+=$HOME/_vim//vimfiles/bundle/Vundle.vim/
 
 call vundle#begin('$HOME/_vim/vimfiles/bundle')
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" GENERAL PLUGINS FIRST
 " Plugin to install plugins
 Plugin 'gmarik/Vundle.vim'
 " Solarized color theme for vim
@@ -31,6 +32,11 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'tpope/vim-surround'
 " Better whitespace highlighting for Vim
 Plugin 'ntpeters/vim-better-whitespace'
+
+"""""""""""""""""""""""""""""""""""""""""" JSON FILES
+" A better JSON for Vim: distinct highlighting of keywords vs values,
+" JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly.
+Plugin 'elzr/vim-json'
 
 call vundle#end()
 
