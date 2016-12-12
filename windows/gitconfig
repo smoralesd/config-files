@@ -50,6 +50,7 @@
 [alias]
     a = add
     d = diff
+    dw = diff -w
     co = checkout
     b = branch
     bra = branch -r -a
