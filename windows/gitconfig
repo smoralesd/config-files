@@ -54,15 +54,23 @@
     b = branch
     bra = branch -r -a
     st = status
+
     g = grep --break --heading
+
     po = pull origin
     fa = fetch --all
     fap = fetch --all --prune
+
     l = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short
     ldate = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cd) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short
+    la = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short --all
+    ll = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short master..HEAD
+
     c = commit
     aa = add .
+
     cfd = clean -fd
+
     parents = "!f() { git log --pretty=%P -n 1 $1;}; f"
     diff-commit = "!f() { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative $1..$2; }; f"
     contains = "!f() { git branch --contains $1; }; f"
