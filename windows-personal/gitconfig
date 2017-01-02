@@ -1,6 +1,6 @@
 [user]
     name = Sebastian Morales
-    email = semora@microsoft.com
+    email = sebastian.moralesd@gmail.com
 [color]
     ui = true
     interactive = true
@@ -24,19 +24,8 @@
     autorebase = true
 [grep]
     lineNumber = true
-[diff]
-    tool = bc4
-[difftool]
-    prompt = false
-[difftool "bc4"]
-    cmd = \"C:/Program Files/Beyond Compare 4/BComp.exe\" \"$LOCAL\" \"$REMOTE\"
 [merge]
     conflictstyle = diff3
-    tool = bc4
-[mergetool]
-    prompt = false
-[mergetool "bc4"]
-    cmd = \"C:/Program Files/Beyond Compare 4/BComp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
 [core]
     safecrlf = true
     preloadindex = true
