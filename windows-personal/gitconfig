@@ -36,10 +36,8 @@
     path = C:/Program Files/KDiff3/kdiff3.exe
     trustExitCode = false
 [core]
-    safecrlf = true
     preloadindex = true
     fscache = true
-    autocrlf = true
     whitespace = cr-at-eol
 [push]
     default = nothing
