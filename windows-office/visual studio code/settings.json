@@ -1,0 +1,30 @@
+{
+    "workbench.colorTheme": "Solarized Dark",
+
+    "editor.fontFamily": "Hack",
+    "editor.fontSize": 16,
+    "editor.renderWhitespace": "all",
+    "editor.insertSpaces": true,
+    "editor.renderIndentGuides": true,
+
+    "window.openFilesInNewWindow": "off",
+
+    "files.trimTrailingWhitespace": false,
+
+    "vim.leader": "<space>",
+
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": ["leader","w"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                }
+            ]
+        }
+    ],
+
+    "vim.hlsearch": true
+}
