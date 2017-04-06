@@ -15,6 +15,41 @@
 
     "vim.otherModesKeyBindingsNonRecursive": [
         {
+            "before": ["Up"],
+            "after": []
+        },
+        {
+            "before": ["Down"],
+            "after": []
+        },
+        {
+            "before": ["Left"],
+            "after": []
+        },
+        {
+            "before": ["Right"],
+            "after": []
+        },
+        {
+            "before": ["leader", "v"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.splitEditor",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": ["leader", "q"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.closeActiveEditor"
+                }
+            ]
+        },
+        {
             "before": ["leader","w"],
             "after": [],
             "commands": [
@@ -30,5 +65,7 @@
         }
     ],
 
-    "vim.hlsearch": true
+    "vim.hlsearch": true,
+
+    "vim.useSystemClipboard": true
 }
