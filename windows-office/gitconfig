@@ -38,10 +38,8 @@
 [mergetool "bc4"]
     cmd = \"C:/Program Files/Beyond Compare 4/BComp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
 [core]
-    safecrlf = true
     preloadindex = true
     fscache = true
-    autocrlf = true
     whitespace = cr-at-eol
 [push]
     default = nothing
@@ -51,6 +49,8 @@
     a = add
     d = diff
     dw = diff -w
+    dh = diff head
+    dt = difftool
     co = checkout
     b = branch
     bra = branch -r -a
