@@ -67,5 +67,6 @@
 
     "vim.hlsearch": true,
 
-    "vim.useSystemClipboard": true
+    "vim.useSystemClipboard": true,
+    "workbench.iconTheme": "vscode-icons"
 }
