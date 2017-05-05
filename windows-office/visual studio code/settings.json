@@ -62,11 +62,30 @@
         {
             "before": ["n"],
             "after": ["n", "z", "z"]
+        },
+        {
+            "before": ["N"],
+            "after": ["N", "z", "z"]
         }
     ],
 
     "vim.hlsearch": true,
 
     "vim.useSystemClipboard": true,
-    "workbench.iconTheme": "vscode-icons"
+    "window.zoomLevel": 0,
+
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/bin": true
+    },
+
+    "workbench.editor.enablePreview": false,
+
+    "workbench.iconTheme": "vscode-icons",
+
+    "codemetrics.basics.CodeLensHiddenUnder": 0
 }
