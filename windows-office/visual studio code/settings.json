@@ -9,7 +9,7 @@
 
     "window.openFilesInNewWindow": "off",
 
-    "files.trimTrailingWhitespace": false,
+    "files.trimTrailingWhitespace": true,
 
     "vim.leader": "<space>",
 
@@ -86,6 +86,5 @@
     "workbench.editor.enablePreview": false,
 
     "workbench.iconTheme": "vscode-icons",
-
-    "codemetrics.basics.CodeLensHiddenUnder": 0
+    "workbench.sideBar.location": "right"
 }
