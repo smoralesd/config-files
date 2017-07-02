@@ -47,6 +47,7 @@
     a = add
     d = diff
     dw = diff -w
+    dh = diff head
     co = checkout
     b = branch
     bra = branch -r -a

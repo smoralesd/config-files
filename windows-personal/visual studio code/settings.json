@@ -1,0 +1,96 @@
+{
+    "workbench.colorTheme": "Solarized-dark",
+
+    "editor.fontFamily": "Hack",
+    "editor.fontSize": 14,
+    "editor.renderWhitespace": "all",
+    "editor.insertSpaces": true,
+    "editor.renderIndentGuides": true,
+
+    "window.openFilesInNewWindow": "off",
+
+    "files.trimTrailingWhitespace": true,
+
+    "vim.leader": "<space>",
+
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": ["Up"],
+            "after": []
+        },
+        {
+            "before": ["Down"],
+            "after": []
+        },
+        {
+            "before": ["Left"],
+            "after": []
+        },
+        {
+            "before": ["Right"],
+            "after": []
+        },
+        {
+            "before": ["leader", "v"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.splitEditor",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": ["leader", "q"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.closeActiveEditor"
+                }
+            ]
+        },
+        {
+            "before": ["leader","w"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": ["n"],
+            "after": ["n", "z", "z"]
+        },
+        {
+            "before": ["N"],
+            "after": ["N", "z", "z"]
+        }
+    ],
+
+    "vim.hlsearch": true,
+
+    "vim.useSystemClipboard": true,
+    "vim.disableAnnoyingNeovimMessage": true,
+
+    "window.zoomLevel": 0,
+
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/bin": true
+    },
+
+    "workbench.editor.enablePreview": false,
+
+    "workbench.sideBar.location": "right",
+
+    "typescript.format.enable": true,
+    "typescript.implementationsCodeLens.enabled": true,
+    "typescript.validate.enable": true,
+    "typescript.referencesCodeLens.enabled": true
+}
