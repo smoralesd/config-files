@@ -19,6 +19,10 @@ Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-surround'
 " bronson/vim-trailing-whitespace
 Plug 'ntpeters/vim-better-whitespace'
+" TypeScript syntax files for vim
+Plug 'leafgarland/typescript-vim'
+" A vim plugin for TypeScript
+Plug 'Quramy/tsuquyomi'
 
 call plug#end()
 
