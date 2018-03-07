@@ -6,8 +6,6 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
-" enable cursor line highlighting
-set cursorline
 " enable line numbers
 set number
 " disable line wrapping
@@ -15,10 +13,20 @@ set nowrap
 " show matching parenthesis
 set showmatch
 
+" set case sensitibity for search pattern
+set ignorecase
+set smartcase
+
 " enable incremental search
 set incsearch
 " enable highlighting for search term
 set hlsearch
 
+syntax enable
+set encoding=utf-8
+
 " Always show current position
 set ruler
+
+" make the default split to be below
+set splitbelow
