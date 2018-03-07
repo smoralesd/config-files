@@ -11,6 +11,14 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tomtom/tcomment_vim'
 " Solarized color theme for vim
 Plug 'altercation/vim-colors-solarized'
+" provides insert mode auto-completion for quotes, parentheses, brackets...
+Plug 'Raimondi/delimitMate'
+" Show a diff via Vim sign column.
+Plug 'mhinz/vim-signify'
+" quoting/parenthesizing made simple
+Plug 'tpope/vim-surround'
+" bronson/vim-trailing-whitespace
+Plug 'ntpeters/vim-better-whitespace'
 
 call plug#end()
 
