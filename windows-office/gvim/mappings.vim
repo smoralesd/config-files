@@ -21,3 +21,6 @@ nnoremap <leader>l :set list!<cr>
 
 " Disable word highlighting (specially after a search)
 nnoremap <leader>h :nohl<cr>
+
+" Remove trailing whitespaces
+nnoremap <F5> :StripWhitespace<cr>
