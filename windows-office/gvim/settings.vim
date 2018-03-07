@@ -30,3 +30,8 @@ set ruler
 
 " make the default split to be below
 set splitbelow
+
+set nobackup
+set noswapfile
+" 'hide' current changed file, instead of try to close it
+set hidden
