@@ -11,6 +11,7 @@
     "editor.minimap.enabled": false,
     "window.openFilesInNewWindow": "off",
     "files.trimTrailingWhitespace": true,
+    "typescript.tsdk": "C:/Users/semora/AppData/Roaming/npm/node_modules/typescript/lib",
     "vim.leader": "<space>",
     "vim.otherModesKeyBindingsNonRecursive": [
         {
@@ -130,5 +131,6 @@
         "statusBar.noFolderBackground": "#8FBCBB",
         "statusBar.debuggingBackground": "#8FBCBB",
         "statusBar.foreground": "#434C5E"
-    }
+    },
+    "gitlens.keymap": "alternate"
 }
