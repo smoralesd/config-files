@@ -6,6 +6,7 @@
     "editor.renderWhitespace": "all",
     "editor.insertSpaces": true,
     "editor.renderIndentGuides": true,
+    "editor.minimap.enabled": false,
 
     "window.openFilesInNewWindow": "off",
 
@@ -90,7 +91,7 @@
     "workbench.sideBar.location": "right",
 
     "typescript.format.enable": true,
-    "typescript.implementationsCodeLens.enabled": true,
+    "typescript.implementationsCodeLens.enabled": false,
     "typescript.validate.enable": true,
     "typescript.referencesCodeLens.enabled": true
 }
