@@ -142,5 +142,10 @@
         "suppressNoRepositoryWarning": false,
         "suppressResultsExplorerNotice": false,
         "suppressShowKeyBindingsNotice": true
-    }
+    },
+    "typescriptHero.imports.ignoredFromRemoval": [
+        "lodash/index",
+        "react"
+    ],
+    "gitlens.historyExplorer.enabled": true
 }
