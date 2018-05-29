@@ -68,7 +68,9 @@
     ll = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short master..HEAD
     lc = log --graph --pretty=format:\"%Cred%H%Creset %s %Creset\"
 
-    lmiss = log --reverse --no-merges --cherry-pick --right-only --pretty=format:\"%Cred%H%Creset %s %Creset\" HEAD...origin/master
+    lmiss = log --reverse --no-merges --cherry-pick --right-only --pretty=format:\"%Cred%H%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" HEAD...origin/master
+
+    cp = cherry-pick -x
 
     c = commit
     aa = add .
