@@ -13,7 +13,7 @@
     "files.trimTrailingWhitespace": true,
     "typescript.tsdk": "C:/Users/semora/AppData/Roaming/npm/node_modules/typescript/lib",
     "vim.leader": "<space>",
-    "vim.otherModesKeyBindingsNonRecursive": [
+    "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": [
                 "Up"
@@ -143,6 +143,7 @@
         "suppressResultsExplorerNotice": false,
         "suppressShowKeyBindingsNotice": true
     },
+    "typescriptHero.imports.removeTrailingIndex": false,
     "typescriptHero.imports.ignoredFromRemoval": [
         "lodash/index",
         "react"
