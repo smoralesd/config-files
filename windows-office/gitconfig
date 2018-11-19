@@ -67,6 +67,7 @@
     la = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short --all
     ll = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short master..HEAD
     lc = log --graph --pretty=format:\"%Cred%H%Creset %s %Creset\"
+    lauthor = log --graph --pretty=format:\"%C(cyan)%an%Creset - %Cred%H%Creset - %s%Creset\"
 
     lmiss = log --reverse --no-merges --cherry-pick --right-only --pretty=format:\"%Cred%H%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" HEAD...origin/master
 
@@ -78,5 +79,5 @@
     cfd = clean -fd
 
     parents = "!f() { git log --pretty=%P -n 1 $1;}; f"
-    diff-commit = "!f() { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative $1..$2; }; f"
+    diff-commit = "!f() { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative $1..$2; }; f"
     contains = "!f() { git branch --contains $1; }; f"
