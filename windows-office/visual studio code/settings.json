@@ -152,5 +152,6 @@
     "tslint.alwaysShowRuleFailuresAsWarnings": true,
     "editor.minimap.enabled": false,
     "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": true
+    "gitlens.views.lineHistory.enabled": true,
+    "search.usePCRE2": true
 }
