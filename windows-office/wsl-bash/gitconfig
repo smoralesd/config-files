@@ -1,0 +1,71 @@
+[user]
+    name = Sebastian Morales
+    email = semora@microsoft.com
+[color]
+    ui = true
+    interactive = true
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = green bold
+    old = red bold
+    new = magenta bold
+    whitespace = red reverse
+[color "status"]
+    added = green
+    changed = red bold
+    untracked = cyan
+[pull]
+    rebase = true
+[branch]
+    autorebase = true
+[grep]
+    lineNumber = true
+[core]
+    preloadindex = true
+    fscache = true
+    whitespace = cr-at-eol
+    autocrlf = true
+[push]
+    default = nothing
+[rerere]
+    enable = true
+[alias]
+    a = add
+    d = diff
+    dw = diff -w
+    dh = diff head
+    dt = difftool
+    co = checkout
+    b = branch
+    bra = branch -r -a
+    st = status
+
+    g = grep --break --heading
+
+    po = pull origin
+    fa = fetch --all
+    fap = fetch --all --prune
+
+    l = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short
+    ldate = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cd) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short
+    la = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short --all
+    ll = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short master..HEAD
+    lc = log --graph --pretty=format:\"%Cred%H%Creset %s %Creset\"
+    lauthor = log --graph --pretty=format:\"%C(cyan)%an%Creset - %Cred%H%Creset - %s%Creset\"
+
+    lmiss = log --reverse --no-merges --cherry-pick --right-only --pretty=format:\"%Cred%H%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" HEAD...origin/master
+
+    cp = cherry-pick -x
+
+    c = commit
+    aa = add .
+
+    cfd = clean -fd
+
+    parents = "!f() { git log --pretty=%P -n 1 $1;}; f"
+    diff-commit = "!f() { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative $1..$2; }; f"
+    contains = "!f() { git branch --contains $1; }; f"
