@@ -83,7 +83,6 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
-        "**/bin": true
     },
 
     "workbench.editor.enablePreview": false,
@@ -93,5 +92,6 @@
     "typescript.format.enable": true,
     "typescript.implementationsCodeLens.enabled": false,
     "typescript.validate.enable": true,
-    "typescript.referencesCodeLens.enabled": true
+    "typescript.referencesCodeLens.enabled": true,
+    "editor.lineNumbers": "relative"
 }
