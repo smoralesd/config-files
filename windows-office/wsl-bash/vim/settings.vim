@@ -52,4 +52,5 @@ set ruler
 " do not show mode (vim-airline is showing the mode)
 " set noshowmode
 
+set wildignore+=*/node_modules/*
 

@@ -20,6 +20,13 @@ Plugin 'mhinz/vim-signify'
 Plugin 'tpope/vim-surround'
 
 
+"""""""""""" TYPESCRIPT PLUGINS
+" Yet Another TypeScript Syntax: The most advanced TypeScript Syntax Highlighting in Vim
+Plugin 'HerringtonDarkholme/yats.vim'
+
+" A Vim plugin for TypeScript
+Plugin 'Quramy/tsuquyomi'
+
 call vundle#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -30,5 +37,10 @@ let g:signify_vcs_list = [ 'git' ]
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CtrlP config
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ctrlp_working_path_mode = ''
+let g:ctrlp_max_files = 0
+
+let g:ctrlp_custom_ignore = {
+            \ 'dir':    '\v[\/]\.(git|hg|svn)$',
+            \ 'file':   '\v\.(exe|so|dll)$',
+            \ }
 
