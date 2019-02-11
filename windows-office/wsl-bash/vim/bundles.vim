@@ -43,6 +43,12 @@ Plugin 'Yggdroot/indentLine'
 " Better whitespace highlighting for Vim
 Plugin 'ntpeters/vim-better-whitespace'
 
+" A Vim plugin for Prettier
+Plugin 'prettier/vim-prettier'
+
+" Toggles between hybrid and absolute line numbers automatically
+Plugin 'jeffkreeftmeijer/vim-numbertoggle'
+
 
 
 """""""""""" TYPESCRIPT PLUGINS
