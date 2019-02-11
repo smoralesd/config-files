@@ -24,11 +24,6 @@
     autorebase = true
 [grep]
     lineNumber = true
-[core]
-    preloadindex = true
-    fscache = true
-    whitespace = cr-at-eol
-    autocrlf = true
 [push]
     default = nothing
 [rerere]
