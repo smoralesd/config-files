@@ -28,6 +28,22 @@ Plugin 'vim-airline/vim-airline'
 " airline themes
 Plugin 'vim-airline/vim-airline-themes'
 
+" easy to use, file-type sensible comments
+Plugin 'tomtom/tcomment_vim'
+
+" provides insert mode auto-completion for quotes, parentheses, brackets...
+Plugin 'Raimondi/delimitMate'
+
+" code-completion engine for Vim
+Plugin 'Valloric/YouCompleteMe'
+
+" show vertical lines for each indent level (on space indented files)
+Plugin 'Yggdroot/indentLine'
+
+" Better whitespace highlighting for Vim
+Plugin 'ntpeters/vim-better-whitespace'
+
+
 
 """""""""""" TYPESCRIPT PLUGINS
 " Yet Another TypeScript Syntax The most advanced TypeScript Syntax Highlighting in Vim
@@ -65,4 +81,11 @@ colorscheme solarized
 let g:airline_solarized_bg='dark'
 let g:airline_theme='wombat'
 let g:airline_powerline_fonts = 1
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" YouCompleteMe config
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ycm_min_num_of_chars_for_completion = 1
+let g:ycm_add_preview_to_completeopt = 1
+let g:ycm_key_invoke_completion = '<C-Space>'
 

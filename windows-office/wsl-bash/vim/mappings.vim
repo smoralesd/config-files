@@ -23,3 +23,5 @@ nnoremap <leader>h :nohl<cr>
 " fast write to buffer
 nnoremap <leader>w :w<cr>
 
+" Remove trailing whitespaces
+nnoremap <F5> :StripWhitespace<cr>
