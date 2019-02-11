@@ -19,6 +19,9 @@ Plugin 'mhinz/vim-signify'
 " quoting/parenthesizing made simple
 Plugin 'tpope/vim-surround'
 
+" Solarized color theme for vim
+Plugin 'altercation/vim-colors-solarized'
+
 
 """""""""""" TYPESCRIPT PLUGINS
 " Yet Another TypeScript Syntax: The most advanced TypeScript Syntax Highlighting in Vim
@@ -43,4 +46,10 @@ let g:ctrlp_custom_ignore = {
             \ 'dir':    '\v[\/]\.(git|hg|svn)$',
             \ 'file':   '\v\.(exe|so|dll)$',
             \ }
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" solarized config
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set background=dark
+colorscheme solarized
 
