@@ -22,9 +22,15 @@ Plugin 'tpope/vim-surround'
 " Solarized color theme for vim
 Plugin 'altercation/vim-colors-solarized'
 
+" status/tabline for vim
+Plugin 'vim-airline/vim-airline'
+
+" airline themes
+Plugin 'vim-airline/vim-airline-themes'
+
 
 """""""""""" TYPESCRIPT PLUGINS
-" Yet Another TypeScript Syntax: The most advanced TypeScript Syntax Highlighting in Vim
+" Yet Another TypeScript Syntax The most advanced TypeScript Syntax Highlighting in Vim
 Plugin 'HerringtonDarkholme/yats.vim'
 
 " A Vim plugin for TypeScript
@@ -52,4 +58,11 @@ let g:ctrlp_custom_ignore = {
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set background=dark
 colorscheme solarized
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" airline config
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:airline_solarized_bg='dark'
+let g:airline_theme='wombat'
+let g:airline_powerline_fonts = 1
 
