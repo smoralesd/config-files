@@ -1,6 +1,7 @@
 ﻿New-Alias g git
 
-Import-Module 'C:\Users\semora\Repos\posh-git\src\posh-git.psd1'
+# Install posh-git using Import-Module for the next line to actually work
+Import-Module posh-git
 
 $GitPromptSettings.BeforeText = "("
 $GitPromptSettings.AfterText = ")"
