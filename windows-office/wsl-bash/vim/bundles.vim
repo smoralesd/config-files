@@ -55,6 +55,11 @@ Plugin 'HerringtonDarkholme/yats.vim'
 " A Vim plugin for TypeScript
 Plugin 'Quramy/tsuquyomi'
 
+"""""""""""""""""""""""""""" JSON FILES
+" A better JSON for Vim: distinct highlighting of keywords vs values,
+" JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly.
+Plugin 'elzr/vim-json'
+
 call vundle#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -89,3 +94,9 @@ let g:airline_powerline_fonts = 1
 " tsuquyomi config
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:tsuquyomi_disable_default_mappings = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-json config
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:vim_json_syntax_conceal = 0
+

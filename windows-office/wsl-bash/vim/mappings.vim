@@ -15,7 +15,8 @@ nnoremap <c-l> <c-w>l
 
 " lclose => close location window
 " pc => close preview  window
-nnoremap <silent> <leader>c :lclose <bar> pc <cr>
+" ccl => close quick fix window
+nnoremap <silent> <leader>c :lclose <bar> pc <bar> ccl <cr>
 
 " Show whitespaces as characters. Useful to check mixed indentS
 nnoremap <leader>l :set list!<cr>
