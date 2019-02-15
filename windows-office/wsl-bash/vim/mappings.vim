@@ -13,6 +13,8 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 
+nnoremap <silent> <leader>c :lclose<cr>
+
 " Show whitespaces as characters. Useful to check mixed indentS
 nnoremap <leader>l :set list!<cr>
 set listchars=tab:▸\ ,eol:¬
@@ -25,3 +27,12 @@ nnoremap <leader>w :w<cr>
 
 " Remove trailing whitespaces
 nnoremap <F5> :StripWhitespace<cr>
+
+"""""""" Tsuquyomi custom mappings
+nnoremap <S-F12> :TsuquyomiReferences<cr>
+nnoremap <F12> :TsuquyomiDefinition<cr>zz
+nnoremap <A-F12> :TsuquyimoTypeDefinition<cr>
+nnoremap <A-Left> :TsuquyomiGoBack<cr>
+nnoremap <F2> :TsuquyomiRenameSymbol<cr>
+inoremap <leader>s :TsuquyomiSignatureHelp<cr>
+nnoremap <leader>s :TsuquyomiSignatureHelp<cr>

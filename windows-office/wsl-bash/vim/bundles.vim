@@ -34,9 +34,6 @@ Plugin 'tomtom/tcomment_vim'
 " provides insert mode auto-completion for quotes, parentheses, brackets...
 Plugin 'Raimondi/delimitMate'
 
-" code-completion engine for Vim
-Plugin 'Valloric/YouCompleteMe'
-
 " show vertical lines for each indent level (on space indented files)
 Plugin 'Yggdroot/indentLine'
 
@@ -89,9 +86,6 @@ let g:airline_theme='wombat'
 let g:airline_powerline_fonts = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
-" YouCompleteMe config
+" tsuquyomi config
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ycm_min_num_of_chars_for_completion = 1
-let g:ycm_add_preview_to_completeopt = 1
-let g:ycm_key_invoke_completion = '<C-Space>'
-
+let g:tsuquyomi_disable_default_mappings = 1
