@@ -13,7 +13,9 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 
-nnoremap <silent> <leader>c :lclose<cr>
+" lclose => close location window
+" pc => close preview  window
+nnoremap <silent> <leader>c :lclose <bar> pc <cr>
 
 " Show whitespaces as characters. Useful to check mixed indentS
 nnoremap <leader>l :set list!<cr>
@@ -32,7 +34,7 @@ nnoremap <F5> :StripWhitespace<cr>
 nnoremap <S-F12> :TsuquyomiReferences<cr>
 nnoremap <F12> :TsuquyomiDefinition<cr>zz
 nnoremap <A-F12> :TsuquyimoTypeDefinition<cr>
-nnoremap <A-Left> :TsuquyomiGoBack<cr>
+nnoremap <leader><Left> :TsuquyomiGoBack<cr>
 nnoremap <F2> :TsuquyomiRenameSymbol<cr>
 inoremap <leader>s :TsuquyomiSignatureHelp<cr>
 nnoremap <leader>s :TsuquyomiSignatureHelp<cr>
