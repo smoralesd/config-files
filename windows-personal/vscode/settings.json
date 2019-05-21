@@ -125,10 +125,10 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.accessibilitySupport": "off",
     "workbench.colorCustomizations": {
+        "editorIndentGuide.activeBackground": "#ffffff",
         "statusBar.background": "#8FBCBB",
         "statusBar.noFolderBackground": "#8FBCBB",
         "statusBar.debuggingBackground": "#8FBCBB",
-        "editorIndentGuide.activeBackground": "#ffffff",
         "statusBar.foreground": "#434C5E"
     },
     "gitlens.keymap": "alternate",
