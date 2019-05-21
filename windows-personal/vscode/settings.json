@@ -1,38 +1,46 @@
 {
     "workbench.colorTheme": "Solarized Dark",
-
+    "editor.lineNumbers": "relative",
     "editor.fontFamily": "Hack",
-    "editor.fontSize": 14,
+    "editor.fontSize": 16,
     "editor.renderWhitespace": "all",
     "editor.insertSpaces": true,
     "editor.renderIndentGuides": true,
-    "editor.minimap.enabled": false,
-
+    "editor.formatOnType": false,
+    "editor.formatOnSave": false,
     "window.openFilesInNewWindow": "off",
-
     "files.trimTrailingWhitespace": true,
-
     "vim.leader": "<space>",
-
-    "vim.otherModesKeyBindingsNonRecursive": [
+    "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": ["Up"],
+            "before": [
+                "Up"
+            ],
             "after": []
         },
         {
-            "before": ["Down"],
+            "before": [
+                "Down"
+            ],
             "after": []
         },
         {
-            "before": ["Left"],
+            "before": [
+                "Left"
+            ],
             "after": []
         },
         {
-            "before": ["Right"],
+            "before": [
+                "Right"
+            ],
             "after": []
         },
         {
-            "before": ["leader", "v"],
+            "before": [
+                "leader",
+                "v"
+            ],
             "after": [],
             "commands": [
                 {
@@ -42,7 +50,10 @@
             ]
         },
         {
-            "before": ["leader", "q"],
+            "before": [
+                "leader",
+                "q"
+            ],
             "after": [],
             "commands": [
                 {
@@ -51,7 +62,10 @@
             ]
         },
         {
-            "before": ["leader","w"],
+            "before": [
+                "leader",
+                "w"
+            ],
             "after": [],
             "commands": [
                 {
@@ -61,37 +75,82 @@
             ]
         },
         {
-            "before": ["n"],
-            "after": ["n", "z", "z"]
+            "before": [
+                "n"
+            ],
+            "after": [
+                "n",
+                "z",
+                "z"
+            ]
         },
         {
-            "before": ["N"],
-            "after": ["N", "z", "z"]
+            "before": [
+                "N"
+            ],
+            "after": [
+                "N",
+                "z",
+                "z"
+            ]
         }
     ],
-
     "vim.hlsearch": true,
-
     "vim.useSystemClipboard": true,
-    "vim.disableAnnoyingNeovimMessage": true,
-
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors": {
+        "normal": ["#8FBCBB", "#434C5E"],
+        "insert": "#BF616A",
+        "visual": "#B48EAD",
+        "visualline": "#B48EAD",
+        "visualblock": "#A3BE8C",
+        "replace": "#D08770"
+    },
     "window.zoomLevel": 0,
-
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
+        "**/bin": true
     },
-
     "workbench.editor.enablePreview": false,
-
+    "workbench.iconTheme": "vscode-icons",
     "workbench.sideBar.location": "right",
-
-    "typescript.format.enable": true,
-    "typescript.implementationsCodeLens.enabled": false,
-    "typescript.validate.enable": true,
     "typescript.referencesCodeLens.enabled": true,
-    "editor.lineNumbers": "relative"
+    "workbench.activityBar.visible": true,
+    "window.menuBarVisibility": "default",
+    "workbench.statusBar.visible": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.accessibilitySupport": "off",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#8FBCBB",
+        "statusBar.noFolderBackground": "#8FBCBB",
+        "statusBar.debuggingBackground": "#8FBCBB",
+        "editorIndentGuide.activeBackground": "#ffffff",
+        "statusBar.foreground": "#434C5E"
+    },
+    "gitlens.keymap": "alternate",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "typescriptHero.imports.removeTrailingIndex": false,
+    "typescriptHero.imports.ignoredFromRemoval": [
+        "lodash/index",
+        "react"
+    ],
+    "gitlens.historyExplorer.enabled": true,
+    "tslint.alwaysShowRuleFailuresAsWarnings": true,
+    "editor.minimap.enabled": false,
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "search.usePCRE2": true
 }
