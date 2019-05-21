@@ -26,15 +26,6 @@
     lineNumber = true
 [merge]
     conflictstyle = diff3
-    tool = kdiff3
-[mergetool "kdiff3"]
-    path = C:/Program Files/KDiff3/kdiff3.exe
-    trustExitCode = false
-[diff]
-    guitool = kdiff3
-[difftool "kdiff3"]
-    path = C:/Program Files/KDiff3/kdiff3.exe
-    trustExitCode = false
 [core]
     preloadindex = true
     fscache = true
@@ -63,6 +54,12 @@
     ldate = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cd) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short
     la = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short --all
     ll = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short master..HEAD
+    lc = log --graph --pretty=format:\"%Cred%H%Creset %s %Creset\"
+    lauthor = log --graph --pretty=format:\"%C(cyan)%an%Creset - %Cred%H%Creset - %s%Creset\"
+
+    lmiss = log --reverse --no-merges --cherry-pick --right-only --pretty=format:\"%Cred%H%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" HEAD...origin/master
+
+    cp = cherry-pick -x
 
     c = commit
     aa = add .
