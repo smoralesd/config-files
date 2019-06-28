@@ -1,6 +1,6 @@
 [user]
-    name = Sebastian Morales
-    email = semora@microsoft.com
+	name = Sebastian Morales
+	email = sebastian.moralesd@gmail.com
 [color]
     ui = true
     interactive = true
@@ -62,12 +62,13 @@
     fa = fetch --all
     fap = fetch --all --prune
 
+    bb = for-each-ref --sort='-authordate' --format='%(color:green)%(align:width=20)%(authordate:human)%(end)%(color:reset)%09%(color:bold cyan)%(objectname:short)%(color:reset) %(color: bold green)%(HEAD)%(color:reset)%(align:width=9,position=right)%(upstream:remotename)%(end):%(color:bold white)%(refname:lstrip=2)%(color:reset)' refs/heads
     l = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short
     ldate = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cd) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short
     la = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short --all
     ll = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short master..HEAD
     lc = log --graph --pretty=format:\"%Cred%H%Creset %s %Creset\"
-    lauthor = log --graph --pretty=format:\"%C(cyan)%an%Creset - %Cred%H%Creset - %s%Creset\"
+    lauthor = log --graph --pretty=format:\"%Cred%h%Creset - %C(cyan)%an%Creset - %s%Creset\"
 
     lmiss = log --reverse --no-merges --cherry-pick --right-only --pretty=format:\"%Cred%H%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" HEAD...origin/master
 
@@ -81,3 +82,10 @@
     parents = "!f() { git log --pretty=%P -n 1 $1;}; f"
     diff-commit = "!f() { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative $1..$2; }; f"
     contains = "!f() { git branch --contains $1; }; f"
+[winUpdater]
+	recentlySeenVersion = 2.22.0.windows.1
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

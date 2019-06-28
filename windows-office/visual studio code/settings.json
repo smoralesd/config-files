@@ -10,7 +10,6 @@
     "editor.formatOnSave": false,
     "window.openFilesInNewWindow": "off",
     "files.trimTrailingWhitespace": true,
-    "typescript.tsdk": "C:/Users/semora/AppData/Roaming/npm/node_modules/typescript/lib",
     "vim.leader": "<space>",
     "vim.normalModeKeyBindingsNonRecursive": [
         {
@@ -97,16 +96,9 @@
         }
     ],
     "vim.hlsearch": true,
+    "vim.incsearch": true,
     "vim.useSystemClipboard": true,
     "vim.statusBarColorControl": true,
-    "vim.statusBarColors": {
-        "normal": ["#8FBCBB", "#434C5E"],
-        "insert": "#BF616A",
-        "visual": "#B48EAD",
-        "visualline": "#B48EAD",
-        "visualblock": "#A3BE8C",
-        "replace": "#D08770"
-    },
     "window.zoomLevel": 0,
     "files.exclude": {
         "**/.git": true,
@@ -117,7 +109,6 @@
         "**/bin": true
     },
     "workbench.editor.enablePreview": false,
-    "workbench.iconTheme": "vscode-icons",
     "workbench.sideBar.location": "right",
     "typescript.referencesCodeLens.enabled": true,
     "workbench.activityBar.visible": true,
@@ -126,11 +117,11 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.accessibilitySupport": "off",
     "workbench.colorCustomizations": {
-        "statusBar.background": "#8FBCBB",
-        "statusBar.noFolderBackground": "#8FBCBB",
-        "statusBar.debuggingBackground": "#8FBCBB",
+        "editor.lineHighlightBackground": "#073642",
         "editorIndentGuide.activeBackground": "#ffffff",
-        "statusBar.foreground": "#434C5E"
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
     },
     "gitlens.keymap": "alternate",
     "gitlens.advanced.messages": {
@@ -148,10 +139,32 @@
         "lodash/index",
         "react"
     ],
-    "gitlens.historyExplorer.enabled": true,
-    "tslint.alwaysShowRuleFailuresAsWarnings": true,
+    "tslint.alwaysShowRuleFailuresAsWarnings": false,
     "editor.minimap.enabled": false,
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
-    "search.usePCRE2": true
+    "search.usePCRE2": true,
+    "terminal.integrated.shell.windows": "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "files.associations": {
+        "**/*.yaml": "azure-pipelines"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.autoSave": "off",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.tslintIntegration": true,
+    "breadcrumbs.enabled": false,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    }
 }
