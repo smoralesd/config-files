@@ -50,6 +50,7 @@
     fa = fetch --all
     fap = fetch --all --prune
 
+    bb = for-each-ref --sort='-authordate' --format='%(color:green)%(align:width=20)%(authordate:human)%(end)%(color:reset)%09%(color:bold cyan)%(objectname:short)%(color:reset) %(color: bold green)%(HEAD)%(color:reset)%(align:width=9,position=right)%(upstream:remotename)%(end):%(color:bold white)%(refname:lstrip=2)%(color:reset)' refs/heads
     l = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short
     ldate = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cd) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short
     la = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short --all
