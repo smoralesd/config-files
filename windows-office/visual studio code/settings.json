@@ -119,9 +119,9 @@
     "workbench.colorCustomizations": {
         "editor.lineHighlightBackground": "#073642",
         "editorIndentGuide.activeBackground": "#ffffff",
-        "statusBar.background": "#005f5f",
-        "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f"
+        "statusBar.background": "#5f0000",
+        "statusBar.noFolderBackground": "#5f0000",
+        "statusBar.debuggingBackground": "#5f0000"
     },
     "gitlens.keymap": "alternate",
     "gitlens.advanced.messages": {
@@ -144,7 +144,7 @@
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
     "search.usePCRE2": true,
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
     "files.associations": {
         "**/*.yaml": "azure-pipelines"
     },
