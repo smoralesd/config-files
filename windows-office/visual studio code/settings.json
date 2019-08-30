@@ -144,7 +144,7 @@
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
     "search.usePCRE2": true,
-    "terminal.integrated.shell.windows": "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
     "files.associations": {
         "**/*.yaml": "azure-pipelines"
     },
@@ -166,5 +166,6 @@
     },
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
-    }
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always"
 }

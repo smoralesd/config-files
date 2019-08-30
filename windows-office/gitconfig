@@ -83,7 +83,7 @@
     diff-commit = "!f() { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative $1..$2; }; f"
     contains = "!f() { git branch --contains $1; }; f"
 [winUpdater]
-	recentlySeenVersion = 2.22.0.windows.1
+	recentlySeenVersion = 2.23.0.windows.1
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
