@@ -59,6 +59,7 @@
     g = grep --break --heading
 
     po = pull origin
+    fou = fetch --prune --multiple origin upstream
     fa = fetch --all
     fap = fetch --all --prune
 
@@ -71,6 +72,8 @@
     lauthor = log --graph --pretty=format:\"%Cred%h%Creset - %C(cyan)%an%Creset - %s%Creset\"
 
     lmiss = log --reverse --no-merges --cherry-pick --right-only --pretty=format:\"%Cred%H%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" HEAD...origin/master
+
+    mum = merge upstream/master
 
     cp = cherry-pick -x
 
