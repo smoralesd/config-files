@@ -119,9 +119,9 @@
     "workbench.colorCustomizations": {
         "editor.lineHighlightBackground": "#073642",
         "editorIndentGuide.activeBackground": "#ffffff",
-        "statusBar.background": "#5f0000",
-        "statusBar.noFolderBackground": "#5f0000",
-        "statusBar.debuggingBackground": "#5f0000"
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
     },
     "gitlens.keymap": "alternate",
     "gitlens.advanced.messages": {
@@ -165,7 +165,13 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "typescript.updateImportsOnFileMove.enabled": "always"
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "cSpell.userWords": [
+        "rescan",
+        "typemoq"
+    ],
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.implementationsCodeLens.enabled": true
 }
