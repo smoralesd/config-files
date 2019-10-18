@@ -60,6 +60,8 @@
 
     lmiss = log --reverse --no-merges --cherry-pick --right-only --pretty=format:\"%Cred%H%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" HEAD...origin/master
 
+    mum = merge upstream/master
+
     cp = cherry-pick -x
 
     c = commit
