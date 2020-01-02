@@ -69,6 +69,7 @@
     la = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short --all
     ll = log --graph --pretty=format:\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" --abbrev-commit --date=short master..HEAD
     lc = log --graph --pretty=format:\"%Cred%H%Creset %s %Creset\"
+    lcl = log --graph --pretty=format:\"%Cred%h%Creset%x3B%C(cyan)%an%Creset%x3B%s%Creset%x3B%Cgreen(%cd)\" --abbrev-commit --date=short
     lauthor = log --graph --pretty=format:\"%Cred%h%Creset - %C(cyan)%an%Creset - %s%Creset\"
 
     lmiss = log --reverse --no-merges --cherry-pick --right-only --pretty=format:\"%Cred%H%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset\" HEAD...origin/master
@@ -86,7 +87,7 @@
     diff-commit = "!f() { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative $1..$2; }; f"
     contains = "!f() { git branch --contains $1; }; f"
 [winUpdater]
-	recentlySeenVersion = 2.23.0.windows.1
+	recentlySeenVersion = 2.24.1.windows.2
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
