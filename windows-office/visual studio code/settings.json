@@ -110,7 +110,6 @@
     },
     "workbench.editor.enablePreview": false,
     "workbench.sideBar.location": "right",
-    "typescript.referencesCodeLens.enabled": true,
     "workbench.activityBar.visible": true,
     "window.menuBarVisibility": "default",
     "workbench.statusBar.visible": true,
@@ -159,7 +158,6 @@
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "prettier.tslintIntegration": true,
     "breadcrumbs.enabled": false,
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -169,9 +167,13 @@
     },
     "typescript.updateImportsOnFileMove.enabled": "always",
     "cSpell.userWords": [
+        "bing",
         "rescan",
         "typemoq"
     ],
     "typescript.preferences.importModuleSpecifier": "non-relative",
-    "typescript.implementationsCodeLens.enabled": true
+    "gitlens.advanced.blame.customArguments": [
+        "--ignore-revs-file",
+        "$(workspaceRoot)/.ignoredRevs"
+    ]
 }
