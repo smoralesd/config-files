@@ -158,9 +158,8 @@
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "breadcrumbs.enabled": false,
     "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -174,6 +173,6 @@
     "typescript.preferences.importModuleSpecifier": "non-relative",
     "gitlens.advanced.blame.customArguments": [
         "--ignore-revs-file",
-        "$(workspaceRoot)/.ignoredRevs"
+        "${workspaceRoot}/.ignoredRevs"
     ]
 }
