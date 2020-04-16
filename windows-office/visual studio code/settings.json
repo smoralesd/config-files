@@ -143,7 +143,6 @@
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
     "search.usePCRE2": true,
-    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
     "files.associations": {
         "**/*.yaml": "azure-pipelines"
     },
@@ -166,6 +165,7 @@
     },
     "typescript.updateImportsOnFileMove.enabled": "always",
     "cSpell.userWords": [
+        "Scrollable",
         "bing",
         "rescan",
         "typemoq"
