@@ -174,5 +174,6 @@
     "gitlens.advanced.blame.customArguments": [
         "--ignore-revs-file",
         "${workspaceRoot}/.ignoredRevs"
-    ]
+    ],
+    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
 }
