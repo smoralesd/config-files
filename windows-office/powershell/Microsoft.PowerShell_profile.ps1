@@ -18,9 +18,6 @@ if (Test-Path($ChocolateyProfile)) {
 }
 
 function prompt {
-    # $Success = $?
-
-    # $prompt += & $GitPromptScriptBlock
     $Success = $?
 
     ## Time calculation
