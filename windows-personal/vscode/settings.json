@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "Solarized Dark",
     "editor.lineNumbers": "relative",
     "editor.fontFamily": "Hack",
     "editor.fontSize": 16,
@@ -152,5 +151,18 @@
     "editor.minimap.enabled": false,
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
-    "search.usePCRE2": true
+    "search.usePCRE2": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.colorTheme": "Solarized Dark",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "jest.pathToJest": "",
+    "jest.pathToConfig": "src/tests/unit/jest.config.js",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
