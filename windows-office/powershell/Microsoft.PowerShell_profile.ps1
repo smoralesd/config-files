@@ -7,9 +7,11 @@ Import-Module posh-git
 $GitPromptSettings.DefaultPromptBeforeSuffix.Text = '`n'
 
 $GitPromptSettings.BeforeStatus = "("
-$GitPromptSettings.AfterStatus = ")"
+$GitPromptSettings.AfterStatus = ")`n"
 $GitPromptSettings.BranchIdenticalStatusSymbol = ""
 $GitPromptSettings.DefaultPromptPath.ForegroundColor = 'Orange'
+$GitPromptSettings.DefaultPromptWriteStatusFirst=  $True
+
 
 # Chocolatey profile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
@@ -60,11 +62,11 @@ function prompt {
     $HistoryId = $MyInvocation.HistoryId
     # Uncomment below for leading zeros
     $HistoryId = '{0:d3}' -f $MyInvocation.HistoryId
-    Write-Host -Object "$HistoryId`: " -NoNewline -ForegroundColor Cyan
+    Write-Host -Object "$HistoryId " -NoNewline -ForegroundColor Cyan
 
     ## User
     $IsAdmin = (New-Object Security.Principal.WindowsPrincipal ([Security.Principal.WindowsIdentity]::GetCurrent())).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
-    Write-Host -Object "$($env:USERNAME) ($(if ($IsAdmin){ 'A' } else { 'U' })) " -NoNewline -ForegroundColor DarkRed
+    Write-Host -Object "$($env:USERNAME) ($(if ($IsAdmin){ 'A' } else { 'U' })) " -ForegroundColor DarkRed
 
     ## return git status
     return & $GitPromptScriptBlock
