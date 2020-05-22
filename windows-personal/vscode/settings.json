@@ -164,5 +164,8 @@
     "jest.pathToConfig": "src/tests/unit/jest.config.js",
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     }
 }
