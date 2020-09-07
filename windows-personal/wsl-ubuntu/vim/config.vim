@@ -28,7 +28,7 @@ set shiftwidth=2
 
 set relativenumber
 
-set list listchars=tab:\ \ ,trail:·
+set list listchars=tab:▸\ ,trail:·
 
 set laststatus=2
 
