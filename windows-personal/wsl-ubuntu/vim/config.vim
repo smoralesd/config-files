@@ -34,8 +34,6 @@ set laststatus=2
 
 set statusline=%f\ %=L:%l/%L\ %c\ (%p%%)
 
-set guioptions-=T
-
 set encoding=utf-8
 
 set autoread
@@ -46,8 +44,6 @@ set splitbelow
 set splitright
 
 set cursorline
-
-" set visualbell
 
 set wildmenu
 
