@@ -1,0 +1,21 @@
+{
+  "background" : "#002B36",
+    "black" : "#002B36",
+    "blue" : "#268BD2",
+    "brightBlack" : "#657B83",
+    "brightBlue" : "#839496",
+    "brightCyan" : "#D33682",
+    "brightGreen" : "#B58900",
+    "brightPurple" : "#EEE8D5",
+    "brightRed" : "#CB4B16",
+    "brightWhite" : "#FDF6E3",
+    "brightYellow" : "#586E75",
+    "cyan" : "#2AA198",
+    "foreground" : "#93A1A1",
+    "green" : "#859900",
+    "name" : "wsl",
+    "purple" : "#6C71C4",
+    "red" : "#DC322F",
+    "white" : "#93A1A1",
+    "yellow" : "#B58900"
+}
