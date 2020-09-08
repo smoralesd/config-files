@@ -45,7 +45,6 @@ set splitright
 
 set cursorline
 
-set wildmenu
 
 set lazyredraw
 
