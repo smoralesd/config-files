@@ -24,3 +24,4 @@ call plug#end()
 " vim-airline config
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline_theme='wombat'
+let g:airline_powerline_fonts=1

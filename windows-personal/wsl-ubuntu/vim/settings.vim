@@ -32,7 +32,7 @@ set list listchars=tab:▸\ ,trail:·
 
 set laststatus=2
 
-set statusline=%f\ %=L:%l/%L\ %c\ (%p%%)
+set noshowmode
 
 set encoding=utf-8
 
