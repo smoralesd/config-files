@@ -11,4 +11,16 @@ Plug 'altercation/vim-colors-solarized'
 " Typescript syntax for vim
 Plug 'leafgarland/typescript-vim'
 
+" Lean & mean status/tabline for vim that's light as air.
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+" Fugitive is the premier Vim plugin for Git
+Plug 'tpope/vim-fugitive'
+
 call plug#end()
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-airline config
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:airline_theme='wombat'
