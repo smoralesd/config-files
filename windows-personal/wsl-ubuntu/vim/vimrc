@@ -3,3 +3,5 @@ source $HOME/repos/config-files/windows-personal/wsl-ubuntu/vim/settings.vim
 source $HOME/repos/config-files/windows-personal/wsl-ubuntu/vim/file-search.vim
 
 source $HOME/repos/config-files/windows-personal/wsl-ubuntu/vim/plugins.vim
+
+source $HOME/repos/config-files/windows-personal/wsl-ubuntu/vim/theme.vim
