@@ -1,8 +1,0 @@
-" this should replace $VIM\_vimrc (usually $VIM=C:\Program Files (x86)\Vim)
-" either copy this file there or
-" create a symbolic link
-"    cd $VIM
-"    New-Item -ItemType SymbolicLink -Name _vimrc -Target $HOME\Repos\config-files\windows-office\gvim\vimrc
-" (replace $VIM and $HOME with the appropiate paths)
-
-source $HOME\Repos\config-files\windows-office\gvim\config.vim
