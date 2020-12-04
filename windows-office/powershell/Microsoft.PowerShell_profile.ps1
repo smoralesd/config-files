@@ -4,13 +4,13 @@ New-Alias y yarn
 # Install posh-git using Import-Module for the next line to actually work
 Import-Module posh-git
 
-$GitPromptSettings.DefaultPromptBeforeSuffix.Text = '`n'
+# $GitPromptSettings.DefaultPromptBeforeSuffix.Text = '`n'
 
-$GitPromptSettings.BeforeStatus = "("
-$GitPromptSettings.AfterStatus = ")`n"
-$GitPromptSettings.BranchIdenticalStatusSymbol = ""
-$GitPromptSettings.DefaultPromptPath.ForegroundColor = 'Orange'
-$GitPromptSettings.DefaultPromptWriteStatusFirst=  $True
+# $GitPromptSettings.BeforeStatus = "("
+# $GitPromptSettings.AfterStatus = ")`n"
+# $GitPromptSettings.BranchIdenticalStatusSymbol = ""
+# $GitPromptSettings.DefaultPromptPath.ForegroundColor = 'Orange'
+# $GitPromptSettings.DefaultPromptWriteStatusFirst=  $True
 
 
 # Chocolatey profile
