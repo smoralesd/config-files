@@ -1,0 +1,179 @@
+{
+    "workbench.colorTheme": "Solarized Dark",
+    "editor.lineNumbers": "relative",
+    "editor.fontFamily": "Hack",
+    "editor.fontSize": 16,
+    "editor.renderWhitespace": "all",
+    "editor.insertSpaces": true,
+    "editor.renderIndentGuides": true,
+    "editor.formatOnType": false,
+    "editor.formatOnSave": false,
+    "window.openFilesInNewWindow": "off",
+    "files.trimTrailingWhitespace": true,
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "Up"
+            ],
+            "after": []
+        },
+        {
+            "before": [
+                "Down"
+            ],
+            "after": []
+        },
+        {
+            "before": [
+                "Left"
+            ],
+            "after": []
+        },
+        {
+            "before": [
+                "Right"
+            ],
+            "after": []
+        },
+        {
+            "before": [
+                "leader",
+                "v"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.splitEditor",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "q"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.closeActiveEditor"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "w"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "n"
+            ],
+            "after": [
+                "n",
+                "z",
+                "z"
+            ]
+        },
+        {
+            "before": [
+                "N"
+            ],
+            "after": [
+                "N",
+                "z",
+                "z"
+            ]
+        }
+    ],
+    "vim.hlsearch": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.statusBarColorControl": true,
+    "window.zoomLevel": 0,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/bin": true
+    },
+    "workbench.editor.enablePreview": false,
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.visible": true,
+    "window.menuBarVisibility": "default",
+    "workbench.statusBar.visible": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.accessibilitySupport": "off",
+    "workbench.colorCustomizations": {
+        "editor.lineHighlightBackground": "#073642",
+        "editorIndentGuide.activeBackground": "#ffffff",
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
+    },
+    "gitlens.keymap": "alternate",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "typescriptHero.imports.removeTrailingIndex": false,
+    "typescriptHero.imports.ignoredFromRemoval": [
+        "lodash/index",
+        "react"
+    ],
+    "tslint.alwaysShowRuleFailuresAsWarnings": false,
+    "editor.minimap.enabled": false,
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "search.usePCRE2": true,
+    "files.associations": {
+        "**/*.yaml": "azure-pipelines"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.autoSave": "off",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "cSpell.userWords": [
+        "Scrollable",
+        "bing",
+        "rescan",
+        "typemoq"
+    ],
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "gitlens.advanced.blame.customArguments": [
+        "--ignore-revs-file",
+        "${workspaceRoot}/.ignoredRevs"
+    ],
+    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
+}
