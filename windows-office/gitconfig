@@ -10,9 +10,9 @@
     remote = green
 [color "diff"]
     meta = yellow bold
-    frag = green bold
+    frag = blue bold
     old = red bold
-    new = magenta bold
+    new = green bold
     whitespace = red reverse
 [color "status"]
     added = green
