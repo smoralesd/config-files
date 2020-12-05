@@ -8,6 +8,7 @@ $GitPromptSettings.BranchIdenticalStatusToSymbol = ""
 $GitPromptSettings.BeforeText = " ("
 $GitPromptSettings.AfterText= ")"
 $GitPromptSettings.DefaultPromptAbbreviateHomeDirectory = $True
+$GitPromptSettings.EnableWindowTitle = '~'
 
 # Chocolatey profile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
