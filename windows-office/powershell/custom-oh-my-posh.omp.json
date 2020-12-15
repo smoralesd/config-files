@@ -7,7 +7,7 @@
                 {
                     "type": "executiontime",
                     "style": "plain",
-                    "foreground": "#579BD5",
+                    "foreground": "#D8473F",
                     "properties": {
                         "always_enabled": true,
                         "prefix": "[",
