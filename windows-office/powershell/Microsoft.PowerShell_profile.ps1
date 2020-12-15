@@ -1,5 +1,5 @@
-﻿New-Alias g git
-New-Alias y yarn
+﻿New-Alias g git -Force
+New-Alias y yarn -Force
 
 # Install posh-git using Import-Module for the next line to actually work
 Import-Module posh-git
