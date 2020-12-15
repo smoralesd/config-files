@@ -79,6 +79,7 @@
                     "foreground": "#007ACC",
                     "properties": {
                         "prefix": "",
+                        "postfix": "",
                         "text": "\uE602"
                     }
                 }
