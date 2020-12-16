@@ -1,6 +1,8 @@
 ﻿New-Alias g git -Force
 New-Alias y yarn -Force
 
+Import-Module posh-git
+
 # The $Prompt block comes from Oh-My-Posh: https://ohmyposh.dev/docs/installation
 [ScriptBlock]$Prompt = {
     $lastCommandSuccess = $?
