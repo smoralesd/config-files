@@ -53,7 +53,10 @@
                     "style": "powerline",
                     "powerline_symbol": "\uE0B0",
                     "foreground": "#000000",
-                    "background": "#C2C206"
+                    "background": "#C2C206",
+                    "properties": {
+                        "display_upstream_icon": true
+                    }
                 }
             ]
         },
@@ -74,7 +77,10 @@
                         "prefix": "",
                         "style": "short",
                         "mapped_locations": [
-                            ["C:\\Users\\semora\\Repos\\power-platform-ux\\apps\\admin-powerplatform-microsoft-com", "PPAC"]
+                            [
+                                "C:\\Users\\semora\\Repos\\power-platform-ux\\apps\\admin-powerplatform-microsoft-com",
+                                "PPAC"
+                            ]
                         ]
                     }
                 }
