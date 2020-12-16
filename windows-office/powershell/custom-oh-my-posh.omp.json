@@ -72,7 +72,10 @@
                     "background": "#007ACC",
                     "properties": {
                         "prefix": "",
-                        "style": "short"
+                        "style": "short",
+                        "mapped_locations": [
+                            ["C:\\Users\\semora\\Repos\\power-platform-ux\\apps\\admin-powerplatform-microsoft-com", "PPAC"]
+                        ]
                     }
                 }
             ]
