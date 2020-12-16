@@ -1,7 +1,7 @@
 {
     "workbench.colorTheme": "Solarized Dark",
     "editor.lineNumbers": "relative",
-    "editor.fontFamily": "Hack",
+    "editor.fontFamily": "Hack NF",
     "editor.fontSize": 16,
     "editor.renderWhitespace": "all",
     "editor.insertSpaces": true,
