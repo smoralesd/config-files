@@ -81,5 +81,6 @@
             ]
         }
     ],
-    "final_space": true
+    "final_space": true,
+    "console_title": true
 }
