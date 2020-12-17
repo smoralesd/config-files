@@ -31,12 +31,22 @@
                     "properties": {
                         "prefix": "x"
                     }
+                },
+                {
+                    "type": "time",
+                    "style": "plain",
+                    "properties": {
+                        "time_format": "15:04:05"
+                    }
                 }
             ]
         },
         {
+            "type": "newline"
+        },
+        {
             "type": "prompt",
-            "alignment": "right",
+            "alignment": "left",
             "segments": [
                 {
                     "type": "node",
