@@ -1,0 +1,96 @@
+{
+    "blocks": [
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "segments": [
+                {
+                    "type": "executiontime",
+                    "style": "plain",
+                    "foreground": "#D8473F",
+                    "properties": {
+                        "always_enabled": true,
+                        "prefix": "[",
+                        "postfix": "]"
+                    }
+                },
+                {
+                    "type": "session",
+                    "style": "plain",
+                    "foreground": "#3FC48A"
+                },
+                {
+                    "type": "root",
+                    "style": "plain",
+                    "foreground": "#B5B50D"
+                },
+                {
+                    "type": "exit",
+                    "style": "plain",
+                    "foreground": "#C94A16",
+                    "properties": {
+                        "prefix": "x"
+                    }
+                },
+                {
+                    "type": "time",
+                    "style": "plain",
+                    "properties": {
+                        "time_format": "15:04:05"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "newline"
+        },
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "segments": [
+                {
+                    "type": "node",
+                    "style": "powerline",
+                    "powerline_symbol": "\uE0B0",
+                    "foreground": "#ffffff",
+                    "background": "#6CA35E",
+                    "properties": {
+                        "prefix": " \uE718 "
+                    }
+                },
+                {
+                    "type": "git",
+                    "style": "powerline",
+                    "powerline_symbol": "\uE0B0",
+                    "foreground": "#000000",
+                    "background": "#C2C206",
+                    "properties": {
+                        "display_upstream_icon": true
+                    }
+                }
+            ]
+        },
+        {
+            "type": "newline"
+        },
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "segments": [
+                {
+                    "type": "path",
+                    "style": "powerline",
+                    "powerline_symbol": "\uE0B0",
+                    "foreground": "#ffffff",
+                    "background": "#007ACC",
+                    "properties": {
+                        "prefix": "",
+                        "style": "short"
+                    }
+                }
+            ]
+        }
+    ],
+    "final_space": true,
+    "console_title": true
+}
