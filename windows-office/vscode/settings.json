@@ -14,30 +14,6 @@
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": [
-                "Up"
-            ],
-            "after": []
-        },
-        {
-            "before": [
-                "Down"
-            ],
-            "after": []
-        },
-        {
-            "before": [
-                "Left"
-            ],
-            "after": []
-        },
-        {
-            "before": [
-                "Right"
-            ],
-            "after": []
-        },
-        {
-            "before": [
                 "leader",
                 "v"
             ],
